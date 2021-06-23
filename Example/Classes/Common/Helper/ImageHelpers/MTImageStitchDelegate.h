@@ -1,5 +1,5 @@
 //
-//  MTImageStitcher.h
+//  MTImageStitchDelegate.h
 //  Memou
 //
 //  Created by Tom on 2021/6/23.
@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class SZMergeResult;
+@protocol MTImageStitchDelegate <NSObject>
 
-@interface MTImageStitcher : NSObject
+- (void)showResult:(SZMergeResult *)result;
 
+- (void)mergeBegin;
 
-- (UIImage *)stitchImages:(NSArray*)images resultTargetSize:(CGSize)targetSize ;
-
+- (void)mergeEnd;
 @end
 
 NS_ASSUME_NONNULL_END

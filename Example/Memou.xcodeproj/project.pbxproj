@@ -59,6 +59,13 @@
 		E244EE7A26831CB300808CD4 /* UIImage+Logo.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE7926831CB300808CD4 /* UIImage+Logo.m */; };
 		E244EE7D26831F1C00808CD4 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE7C26831F1C00808CD4 /* UIImage+Rotate.m */; };
 		E244EE8126834B4100808CD4 /* MTImagesPreEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */; };
+		E244EE8526837AD600808CD4 /* SZImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8426837AD600808CD4 /* SZImageGenerator.m */; };
+		E244EE8826837AE300808CD4 /* SZImageMergeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */; };
+		E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8A26837AF400808CD4 /* SZImageFinger.m */; };
+		E244EE8E26837B0100808CD4 /* SZConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8D26837B0100808CD4 /* SZConstraint.m */; };
+		E244EE9226837B2800808CD4 /* UIImage+Stiching.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9126837B2800808CD4 /* UIImage+Stiching.m */; };
+		E244EE9626838F5900808CD4 /* SZMergeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9526838F5900808CD4 /* SZMergeResult.m */; };
+		E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE98268391B700808CD4 /* MTImagesPreViewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +187,21 @@
 		E244EE7E26834A3200808CD4 /* MTImagePreEditInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditInteractorProtocol.h; sourceTree = "<group>"; };
 		E244EE7F26834B4100808CD4 /* MTImagesPreEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagesPreEditView.h; sourceTree = "<group>"; };
 		E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagesPreEditView.m; sourceTree = "<group>"; };
+		E244EE8326837AD600808CD4 /* SZImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageGenerator.h; sourceTree = "<group>"; };
+		E244EE8426837AD600808CD4 /* SZImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageGenerator.m; sourceTree = "<group>"; };
+		E244EE8626837AE300808CD4 /* SZImageMergeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageMergeInfo.h; sourceTree = "<group>"; };
+		E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageMergeInfo.m; sourceTree = "<group>"; };
+		E244EE8926837AF400808CD4 /* SZImageFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageFinger.h; sourceTree = "<group>"; };
+		E244EE8A26837AF400808CD4 /* SZImageFinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageFinger.m; sourceTree = "<group>"; };
+		E244EE8C26837B0100808CD4 /* SZConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZConstraint.h; sourceTree = "<group>"; };
+		E244EE8D26837B0100808CD4 /* SZConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZConstraint.m; sourceTree = "<group>"; };
+		E244EE9026837B2800808CD4 /* UIImage+Stiching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Stiching.h"; sourceTree = "<group>"; };
+		E244EE9126837B2800808CD4 /* UIImage+Stiching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Stiching.m"; sourceTree = "<group>"; };
+		E244EE9326838F0000808CD4 /* MTImageStitchDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImageStitchDelegate.h; sourceTree = "<group>"; };
+		E244EE9426838F5900808CD4 /* SZMergeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZMergeResult.h; sourceTree = "<group>"; };
+		E244EE9526838F5900808CD4 /* SZMergeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZMergeResult.m; sourceTree = "<group>"; };
+		E244EE97268391B700808CD4 /* MTImagesPreViewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagesPreViewView.h; sourceTree = "<group>"; };
+		E244EE98268391B700808CD4 /* MTImagesPreViewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagesPreViewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +384,8 @@
 		E21B4745267DF9D200CAB1DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E244EE9026837B2800808CD4 /* UIImage+Stiching.h */,
+				E244EE9126837B2800808CD4 /* UIImage+Stiching.m */,
 				E21B4746267DF9D200CAB1DE /* MemouCategory.h */,
 				E244EE7B26831F1C00808CD4 /* UIImage+Rotate.h */,
 				E244EE7C26831F1C00808CD4 /* UIImage+Rotate.m */,
@@ -400,8 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				E21B4752267DF9D200CAB1DE /* MemouHelper.h */,
-				E244EE7526831BA700808CD4 /* MTImageStitcher.h */,
-				E244EE7626831BA700808CD4 /* MTImageStitcher.m */,
+				E244EE8226834E5B00808CD4 /* ImageHelpers */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -457,6 +480,8 @@
 		E21B4762267DF9D200CAB1DE /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				E244EE9426838F5900808CD4 /* SZMergeResult.h */,
+				E244EE9526838F5900808CD4 /* SZMergeResult.m */,
 				E21B4763267DF9D200CAB1DE /* MTImagePreEditDataManager.h */,
 				E21B4764267DF9D200CAB1DE /* MTImagePreEditDataManager.m */,
 			);
@@ -498,6 +523,8 @@
 				E21B476E267DF9D200CAB1DE /* MTImagePreEditViewController.m */,
 				E244EE7F26834B4100808CD4 /* MTImagesPreEditView.h */,
 				E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */,
+				E244EE97268391B700808CD4 /* MTImagesPreViewView.h */,
+				E244EE98268391B700808CD4 /* MTImagesPreViewView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -592,6 +619,32 @@
 				E21B47BA2680D21500CAB1DE /* MTGestureHandler.m */,
 			);
 			path = SortedTableNode;
+			sourceTree = "<group>";
+		};
+		E244EE8226834E5B00808CD4 /* ImageHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				E244EE8F26837B0C00808CD4 /* Agorithm */,
+				E244EE7526831BA700808CD4 /* MTImageStitcher.h */,
+				E244EE7626831BA700808CD4 /* MTImageStitcher.m */,
+				E244EE9326838F0000808CD4 /* MTImageStitchDelegate.h */,
+			);
+			path = ImageHelpers;
+			sourceTree = "<group>";
+		};
+		E244EE8F26837B0C00808CD4 /* Agorithm */ = {
+			isa = PBXGroup;
+			children = (
+				E244EE8C26837B0100808CD4 /* SZConstraint.h */,
+				E244EE8D26837B0100808CD4 /* SZConstraint.m */,
+				E244EE8626837AE300808CD4 /* SZImageMergeInfo.h */,
+				E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */,
+				E244EE8926837AF400808CD4 /* SZImageFinger.h */,
+				E244EE8A26837AF400808CD4 /* SZImageFinger.m */,
+				E244EE8326837AD600808CD4 /* SZImageGenerator.h */,
+				E244EE8426837AD600808CD4 /* SZImageGenerator.m */,
+			);
+			path = Agorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -743,12 +796,16 @@
 			files = (
 				E21B4778267DF9D200CAB1DE /* MemouDateUtility.m in Sources */,
 				E21B47A6267E052800CAB1DE /* MTImageListView.m in Sources */,
+				E244EE9626838F5900808CD4 /* SZMergeResult.m in Sources */,
 				E21B477F267DF9D200CAB1DE /* MTImagePreEditInteractor.m in Sources */,
+				E244EE8E26837B0100808CD4 /* SZConstraint.m in Sources */,
 				E21B479C267DFB7200CAB1DE /* MTHomeDataManager.m in Sources */,
 				E21B477E267DF9D200CAB1DE /* MTImagePreEditViewController.m in Sources */,
 				E21B479E267DFB7200CAB1DE /* MTHomeWireframe.m in Sources */,
 				E21B47B0267E079F00CAB1DE /* MTImageCell.m in Sources */,
 				E21B47A3267DFF7F00CAB1DE /* MTRootWireframe.m in Sources */,
+				E244EE8526837AD600808CD4 /* SZImageGenerator.m in Sources */,
+				E244EE8826837AE300808CD4 /* SZImageMergeInfo.m in Sources */,
 				E21B4776267DF9D200CAB1DE /* MemouConstants.m in Sources */,
 				E244EE7726831BA700808CD4 /* MTImageStitcher.m in Sources */,
 				E21B47AC267E065600CAB1DE /* MySortedTableView.m in Sources */,
@@ -756,6 +813,7 @@
 				E21B47BB2680D21500CAB1DE /* MTGestureHandler.m in Sources */,
 				E21FE0B92682014A001F4DF9 /* UIViewController+MTNaviBarItem.m in Sources */,
 				E21B477C267DF9D200CAB1DE /* MTImagePreEditPresenter.m in Sources */,
+				E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */,
 				E21B4775267DF9D200CAB1DE /* MemouConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E21B47A9267E061100CAB1DE /* BaseSortedTableView.m in Sources */,
@@ -766,6 +824,7 @@
 				E21B47B4267E385100CAB1DE /* UIImage+Clip.m in Sources */,
 				E21B477A267DF9D200CAB1DE /* MemouFontUtility.m in Sources */,
 				E244EE7A26831CB300808CD4 /* UIImage+Logo.m in Sources */,
+				E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */,
 				C8871940267F31EE00E9D03C /* MTImageNodeListView.m in Sources */,
 				C887197A267F55A800E9D03C /* MTImageCellNode.m in Sources */,
 				E21B4777267DF9D200CAB1DE /* MemouDeviceUtility.m in Sources */,
@@ -777,6 +836,7 @@
 				E21B4786267DFB0E00CAB1DE /* MemouAppDependencies.m in Sources */,
 				E244EE7D26831F1C00808CD4 /* UIImage+Rotate.m in Sources */,
 				C8871900267F20DA00E9D03C /* MTImageCellModel.m in Sources */,
+				E244EE9226837B2800808CD4 /* UIImage+Stiching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

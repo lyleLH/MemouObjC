@@ -13,4 +13,7 @@
  */
 @interface MTImagePreEditDataManager : NSObject
 
+
+- (void)saveImages:(NSArray*)images;
+- (NSArray*)savedImages;
 @end

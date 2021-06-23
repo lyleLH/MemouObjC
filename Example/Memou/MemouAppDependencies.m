@@ -85,8 +85,8 @@
     
     MTImagePreEditInteractor *editInteractor = [[MTImagePreEditInteractor alloc] init];
     editPresenter.interactor = editInteractor;
-
-    
+    editInteractor.presenter = editPresenter;
+     
     MTImagePreEditDataManager *editDataManager = [[MTImagePreEditDataManager alloc] init];
     editInteractor.dataManager  =editDataManager;
     

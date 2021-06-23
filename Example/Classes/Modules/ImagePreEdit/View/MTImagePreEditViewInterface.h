@@ -15,9 +15,11 @@
 @protocol MTImagePreEditViewInputInterface <NSObject>
 
 - (void)setUpPreEditViewWithImages:(NSArray<UIImage *>*)images;
+- (void)updatePreviewWithImage:(UIImage *)image;
 @end
 
 
 @protocol MTImagePreEditViewOutputInterface <NSObject>
 
+- (void)saveStitchImageToAlbum;
 @end

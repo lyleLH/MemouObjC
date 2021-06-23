@@ -19,6 +19,16 @@
 
 - (void)sortedImages:(NSArray<UIImage *> *)images {
     [self.userInterface  setUpPreEditViewWithImages:images];
+    [self.interactor.dataManager saveImages:images];
+    
 }
 
+- (void)saveStitchImageToAlbum {
+    [self.interactor stitchImages:@[]];
+}
+
+
+- (void)stitchedImagePrepared:(UIImage *)image {
+    [self.userInterface updatePreviewWithImage:image];
+}
 @end
