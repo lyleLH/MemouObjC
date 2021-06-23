@@ -66,6 +66,8 @@
 		E244EE9226837B2800808CD4 /* UIImage+Stiching.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9126837B2800808CD4 /* UIImage+Stiching.m */; };
 		E244EE9626838F5900808CD4 /* SZMergeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9526838F5900808CD4 /* SZMergeResult.m */; };
 		E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE98268391B700808CD4 /* MTImagesPreViewView.m */; };
+		E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9C2683992500808CD4 /* MTEmptyView.m */; };
+		E244EE9F2683992F00808CD4 /* MTEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E244EE9E2683992F00808CD4 /* MTEmptyView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +204,9 @@
 		E244EE9526838F5900808CD4 /* SZMergeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZMergeResult.m; sourceTree = "<group>"; };
 		E244EE97268391B700808CD4 /* MTImagesPreViewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagesPreViewView.h; sourceTree = "<group>"; };
 		E244EE98268391B700808CD4 /* MTImagesPreViewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagesPreViewView.m; sourceTree = "<group>"; };
+		E244EE9B2683992500808CD4 /* MTEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEmptyView.h; sourceTree = "<group>"; };
+		E244EE9C2683992500808CD4 /* MTEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEmptyView.m; sourceTree = "<group>"; };
+		E244EE9E2683992F00808CD4 /* MTEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTEmptyView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,6 +596,7 @@
 		E21B4795267DFB7200CAB1DE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E244EE9A2683991300808CD4 /* EmptyView */,
 				C8871935267F308500E9D03C /* ImageNodeList */,
 				E21B4797267DFB7200CAB1DE /* MTHomeViewInterface.h */,
 				E21B4798267DFB7200CAB1DE /* MTHomeViewController.h */,
@@ -645,6 +651,16 @@
 				E244EE8426837AD600808CD4 /* SZImageGenerator.m */,
 			);
 			path = Agorithm;
+			sourceTree = "<group>";
+		};
+		E244EE9A2683991300808CD4 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				E244EE9B2683992500808CD4 /* MTEmptyView.h */,
+				E244EE9C2683992500808CD4 /* MTEmptyView.m */,
+				E244EE9E2683992F00808CD4 /* MTEmptyView.xib */,
+			);
+			path = EmptyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -732,6 +748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB23DFC41BA94BAA00F13CE2 /* Localizable.strings in Resources */,
+				E244EE9F2683992F00808CD4 /* MTEmptyView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				AB23DFC31BA94BAA00F13CE2 /* HaidoraRefresh.strings in Resources */,
 				AB23DFC01BA94B4900F13CE2 /* LaunchScreen.xib in Resources */,
@@ -813,6 +830,7 @@
 				E21B47BB2680D21500CAB1DE /* MTGestureHandler.m in Sources */,
 				E21FE0B92682014A001F4DF9 /* UIViewController+MTNaviBarItem.m in Sources */,
 				E21B477C267DF9D200CAB1DE /* MTImagePreEditPresenter.m in Sources */,
+				E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */,
 				E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */,
 				E21B4775267DF9D200CAB1DE /* MemouConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

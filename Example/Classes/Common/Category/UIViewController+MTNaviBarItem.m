@@ -11,16 +11,16 @@
 @implementation UIViewController (MTNaviBarItem)
 
 
-- (void)mt_setNaviBaritemWithTitle:(NSString*)title Target:(id)target selector:(SEL)action {
+- (UIButton *)mt_setNaviBaritemWithTitle:(NSString*)title color:(UIColor *)color Target:(id)target selector:(SEL)action {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [button.titleLabel setFont:[UIFont systemFontOfSize:14]];
     [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [button setTitleColor:color forState:UIControlStateNormal];
     [button setTitle:title forState:UIControlStateDisabled];
     [button setTitleColor:[UIColor grayColor]  forState:UIControlStateDisabled];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    return button;
 }
 
 @end

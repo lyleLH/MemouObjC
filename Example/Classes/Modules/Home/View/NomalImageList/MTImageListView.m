@@ -90,7 +90,9 @@
     //无数据状态配置
     [emptySetter setTitle:@"还未选择照片哦" forState:MTEmptySetterState_Empty];
     [emptySetter setDescription:@"点击屏幕任意处选择照片" forState:MTEmptySetterState_Empty];
-    [emptySetter setImage:[UIImage imageNamed:@"selfie"] forState:MTEmptySetterState_Empty];
+    UIImage * image =  [UIImage imageNamed:@"selfie"];
+      
+    [emptySetter setImage:image forState:MTEmptySetterState_Empty];
     
     [emptySetter setTapViewHandler:^(UIView * _Nonnull view) {
         [self mt_passEventName:@"pickerImage" fromObject:self withUserInfo:@{}];

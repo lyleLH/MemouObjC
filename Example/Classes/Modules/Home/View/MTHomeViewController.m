@@ -26,7 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self mt_setNaviBaritemWithTitle:@"拼接" Target:self selector:@selector(startToStitch:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self mt_setNaviBaritemWithTitle:@"开始拼接" color:[UIColor blueColor] Target:self selector:@selector(startToStitch:)]];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self mt_setNaviBaritemWithTitle:@"清除" color:[UIColor redColor] Target:self selector:@selector(startToStitch:)]];
+    
     self.view.backgroundColor = [UIColor mt_colorWithHex:0xFEF7E7];
 }
 
