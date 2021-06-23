@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (MTNaviBarItem)
+ 
 - (UIButton*)mt_setNaviBaritemWithTitle:(NSString*)title color:(UIColor*)color Target:(id)target selector:(SEL)action ;
+ 
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,6 +19,7 @@
 - (instancetype)initWithStyle:(UITableViewStyle)style {
     if(self == [super initWithStyle:style]){
         
+    
         self.gestureEventHandler = [[MTGestureHandler alloc] init];
         self.gestureEventHandler.tableNode = self;
         self.gestureEventHandler.gestureMinimumPressDuration = 1.f;
@@ -28,8 +29,7 @@
         self.gestureEventHandler.longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
         [self.view addGestureRecognizer: self.gestureEventHandler.longPressGesture];
      
-        
-        
+  
     }
     return self;
 }

@@ -11,7 +11,9 @@
 @implementation UIViewController (MTNaviBarItem)
 
 
-- (UIButton*)mt_setNaviBaritemWithTitle:(NSString*)title color:(UIColor*)color Target:(id)target selector:(SEL)action {
+ 
+- (UIButton *)mt_setNaviBaritemWithTitle:(NSString*)title color:(UIColor *)color Target:(id)target selector:(SEL)action {
+ 
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [button.titleLabel setFont:[UIFont systemFontOfSize:14]];

@@ -12,7 +12,7 @@
 
 - (UIImage *)addWaterText:(NSString *)text{
     CGPoint point = CGPointMake(self.size.width/2, self.size.height/2);
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:60],NSForegroundColorAttributeName:[UIColor blueColor]};
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:20],NSForegroundColorAttributeName:[UIColor blueColor]};
     //1.开启上下文
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
     //2.绘制图片
