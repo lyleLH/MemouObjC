@@ -1,0 +1,23 @@
+
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+source 'https://github.com/lyleLH/MTSpecs.git'
+
+platform :ios, '10.0'
+
+target 'Memou' do
+  pod  'MTLayoutUtilityComponent'
+  pod  'MTCategoryComponent'
+  pod  'CYLTabBarController'
+  pod  'MTImagePickerObjC'
+  pod  'MTEmptySetComponent'
+  pod 'Texture', '~> 3.0.0'
+  pod  'LookinServer', :configurations => ['Debug']
+#  pod 'FastImageCache', '~> 1.5.1'
+  # ${INCLUDED_PODVERSIONS}
+end
+
+# target 'Memou_Tests', :exclusive => true do
+#   
+#   # ${INCLUDED_PODVERSIONS}
+# end

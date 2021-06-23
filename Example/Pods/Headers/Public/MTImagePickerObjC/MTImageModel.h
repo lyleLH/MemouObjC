@@ -1,0 +1,1 @@
+../../../MTImagePickerObjC/MTImagePickerObjC/Classes/PreviewPicker/DataManager/MTImageModel.h

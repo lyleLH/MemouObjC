@@ -1,0 +1,11 @@
+/* 
+  HaidoraRefresh.strings
+  Memou
+
+  Created by Tom on 06/19/2021.
+  Copyright (c) 2021 Tom. All rights reserved.
+*/
+//如果不需要下拉刷新,可以删除该文件
+"Pull to Refresh..."="下拉可以刷新";
+"Release to Refresh..."="松开可以刷新";
+"Loading..."="加载中...";
