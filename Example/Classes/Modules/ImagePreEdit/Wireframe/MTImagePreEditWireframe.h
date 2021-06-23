@@ -22,6 +22,6 @@
 @property (nonatomic, strong) MTImagePreEditPresenter *presenter;
 
 // initialization
-- (void)presentSelfFromViewController:(UIViewController *)viewController;
+- (void)presentEditUserInterfaceFromViewController:(UIViewController *)viewController ;
 
 @end

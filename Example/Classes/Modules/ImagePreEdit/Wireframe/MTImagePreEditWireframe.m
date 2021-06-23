@@ -17,17 +17,18 @@
 
 @implementation MTImagePreEditWireframe
 
-- (void)presentSelfFromViewController:(UIViewController *)viewController
+- (void)presentEditUserInterfaceFromViewController:(UIViewController *)viewController  
 {
     // save reference
-    self.viewController = [[MTImagePreEditViewController alloc] initWithNibName:@"MTImagePreEditViewController" bundle:nil];
+    self.viewController = [[MTImagePreEditViewController alloc] init];
 
     // view <-> presenter
     self.presenter.userInterface = self.viewController;
     self.viewController.eventHandler = self.presenter;
-
+    
     // present controller
     // *** present self with RootViewController
+    [viewController.navigationController pushViewController:self.viewController animated:YES];
 }
 
 @end

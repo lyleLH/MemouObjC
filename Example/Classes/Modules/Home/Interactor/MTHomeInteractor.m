@@ -8,6 +8,12 @@
 
 #import "MTHomeInteractor.h"
 
+
+@interface MTHomeInteractor ()
+
+@end
+
+
 @implementation MTHomeInteractor
 
 
@@ -21,8 +27,11 @@
 }
 
 
-- (void)preparedImages {
+- (void)prepareImages {
     [self.presenter allImagesPrepared:[self.dataManager imagesWithModelArray:self.dataManager.sortedArray]];
 }
+
+
+
 
 @end

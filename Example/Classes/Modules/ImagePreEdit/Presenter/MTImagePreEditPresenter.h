@@ -20,11 +20,11 @@
 /**
  Display logic for the ImagePreEdit module.
  */
-@interface MTImagePreEditPresenter : NSObject <MTImagePreEditModuleInterface>
+@interface MTImagePreEditPresenter : NSObject <MTImagePreEditViewOutputInterface,MTImagePreEditModuleDelegate>
 
 @property (nonatomic, strong) MTImagePreEditInteractor *interactor;
 @property (nonatomic, weak) MTImagePreEditWireframe *wireframe;
 
-@property (nonatomic, weak) UIViewController<MTImagePreEditViewInterface> *userInterface;
+@property (nonatomic, weak) UIViewController<MTImagePreEditViewInputInterface> *userInterface;
 
 @end

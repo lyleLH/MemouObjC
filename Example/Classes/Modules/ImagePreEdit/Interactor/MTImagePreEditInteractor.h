@@ -10,7 +10,7 @@
 
 #import "MTImagePreEditPresenter.h"
 #import "MTImagePreEditDataManager.h"
-
+#import "MTImagePreEditInteractorProtocol.h"
 @class MTImagePreEditPresenter;
 
 /**
@@ -18,7 +18,7 @@
  */
 @interface MTImagePreEditInteractor : NSObject
 
-@property (nonatomic, weak) MTImagePreEditPresenter *presenter;
+@property (nonatomic, weak) MTImagePreEditPresenter <MTImagePreEditInteractorOutputProtocol>*presenter;
 @property (nonatomic, strong) MTImagePreEditDataManager *dataManager;
 
 @end

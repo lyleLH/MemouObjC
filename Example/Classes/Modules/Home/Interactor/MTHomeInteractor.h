@@ -20,5 +20,5 @@
 
 @property (nonatomic, weak) MTHomePresenter <MTHomeInteractorOutputProtocol>*presenter;
 @property (nonatomic, strong) MTHomeDataManager *dataManager;
-
+//@property (nonatomic, weak) MTHomeDataManager *dataManager;
 @end

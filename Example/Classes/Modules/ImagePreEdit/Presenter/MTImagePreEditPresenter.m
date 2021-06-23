@@ -14,4 +14,11 @@
 
 // implement module interface here
 
+
+#pragma mark -- MTImagePreEditModuleDelegate
+
+- (void)sortedImages:(NSArray<UIImage *> *)images {
+    [self.userInterface  setUpPreEditViewWithImages:images];
+}
+
 @end

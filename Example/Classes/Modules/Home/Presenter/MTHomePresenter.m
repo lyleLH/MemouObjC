@@ -25,7 +25,7 @@
 }
 
 - (void)startToStitchImages {
-    [self.interactor preparedImages];
+    [self.interactor prepareImages];
 }
 
 - (void)sortedNewArray:(NSArray *)array {
@@ -44,19 +44,11 @@
 
 
 - (void)allImagesPrepared:(NSArray<UIImage *>*)images {
-//    NSArray * imageArray =@[[UIImage imageNamed:@"pano_19_16_mid"],
-//                        [UIImage imageNamed:@"pano_19_20_mid"],
-//                        [UIImage imageNamed:@"pano_19_22_mid"],
-//                        [UIImage imageNamed:@"pano_19_25_mid"]];
-    
-    
-//    UIImageView * imageView= [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];
-//    imageView.image = image;
-//
-//    [[UIApplication sharedApplication].delegate.window addSubview:imageView];
-    
+
+    [self.wireframe presentEditInterface];
+    [self.editModuleDelegate sortedImages:images];
 }
 
-
+ 
 
 @end

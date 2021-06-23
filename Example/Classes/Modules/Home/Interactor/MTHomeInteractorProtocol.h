@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @protocol MTHomeInteractorInputProtocol <NSObject>
+
 - (NSArray *)requestImageModels:(NSArray*)assets ;
 - (void)saveSortedArray:(NSArray*)modelArray  ;
-- (void)preparedImages;
+- (void)prepareImages;
+
 @end
 
 

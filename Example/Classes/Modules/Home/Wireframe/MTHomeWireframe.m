@@ -9,6 +9,7 @@
 #import "MTHomeWireframe.h"
 #import "MTHomeViewController.h"
 
+#import "MTImagePreEditWireframe.h"
 @interface MTHomeWireframe ()
 
 @property (nonatomic, strong) MTHomeViewController *viewController;
@@ -44,6 +45,12 @@
     
  
     
+}
+
+
+- (void)presentEditInterface
+{
+    [self.editWireframe presentEditUserInterfaceFromViewController:self.viewController ];
 }
 
 

@@ -11,6 +11,13 @@
 /**
  View interface for the ImagePreEdit module.
  */
-@protocol MTImagePreEditViewInterface <NSObject>
+
+@protocol MTImagePreEditViewInputInterface <NSObject>
+
+- (void)setUpPreEditViewWithImages:(NSArray<UIImage *>*)images;
+@end
+
+
+@protocol MTImagePreEditViewOutputInterface <NSObject>
 
 @end

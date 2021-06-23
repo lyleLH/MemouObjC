@@ -10,13 +10,15 @@
 
 #import "MTImagePreEditModuleInterface.h"
 #import "MTImagePreEditViewInterface.h"
+#import "MTImagesPreEditView.h"
 
 /**
  View controller for the ImagePreEdit module.
  */
-@interface MTImagePreEditViewController : UIViewController <MTImagePreEditViewInterface>
+@interface MTImagePreEditViewController : UIViewController <MTImagePreEditViewInputInterface>
 
-@property (nonatomic, strong) id<MTImagePreEditModuleInterface> eventHandler;
+@property (nonatomic, strong) id<MTImagePreEditViewOutputInterface> eventHandler;
+
 
 // *** add UI events here
 

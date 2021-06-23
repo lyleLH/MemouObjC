@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     [self mt_setNaviBaritemWithTitle:@"拼接" Target:self selector:@selector(startToStitch:)];
+    self.view.backgroundColor = [UIColor mt_colorWithHex:0xFEF7E7];
 }
 
 - (void)startToStitch:(UIButton*)button{

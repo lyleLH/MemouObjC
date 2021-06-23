@@ -12,7 +12,7 @@
 #import "MTHomePresenter.h"
 
 @class MTHomePresenter;
-
+@class MTImagePreEditWireframe;
 /**
  Module wireframe for the Home module.
  */
@@ -20,10 +20,10 @@
 
 @property (nonatomic, strong) MTRootWireframe *rootWireframe;
 @property (nonatomic, strong) MTHomePresenter *presenter;
-
+@property (nonatomic, strong) MTImagePreEditWireframe *editWireframe;
 // initialization
 - (void)presentSelfFromViewController:(UIViewController *)viewController;
 
 - (void)presentSelfFromWindow:(UIWindow *)window ;
-
+- (void)presentEditInterface;
 @end

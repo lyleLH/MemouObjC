@@ -15,6 +15,10 @@
 #import "MTHomeDataManager.h"
 #import "MTHomeInteractor.h"
 
+#import "MTImagePreEditWireframe.h"
+#import "MTImagePreEditPresenter.h"
+#import "MTImagePreEditInteractor.h"
+#import "MTImagePreEditDataManager.h"
 
 @interface MemouAppDependencies ()
 
@@ -54,6 +58,8 @@
     // *** add datastore
 
     // *** module initialization
+    
+    // Home module initialization
     self.homeWireframe = [[MTHomeWireframe alloc] init];
     self.homeWireframe.rootWireframe = rootWireframe;
     MTHomePresenter * presenter = [[MTHomePresenter alloc] init];
@@ -61,12 +67,28 @@
     
     MTHomeInteractor * interactor = [[MTHomeInteractor alloc] init];
     presenter.interactor = interactor;
+    presenter.wireframe = self.homeWireframe;
     MTHomeDataManager * dataManager = [[MTHomeDataManager alloc] init];
     interactor.dataManager = dataManager;
     interactor.presenter = presenter;
     
+    // Edit module initialization
+    MTImagePreEditWireframe *editWireframe = [[MTImagePreEditWireframe alloc] init];
+    self.homeWireframe.editWireframe = editWireframe;
     
-   
+    MTImagePreEditPresenter *editPresenter = [[MTImagePreEditPresenter alloc] init];
+    editWireframe.presenter   =editPresenter;
+    
+    presenter.editModuleDelegate = editPresenter;
+    
+    
+    
+    MTImagePreEditInteractor *editInteractor = [[MTImagePreEditInteractor alloc] init];
+    editPresenter.interactor = editInteractor;
+
+    
+    MTImagePreEditDataManager *editDataManager = [[MTImagePreEditDataManager alloc] init];
+    editInteractor.dataManager  =editDataManager;
     
 }
 
