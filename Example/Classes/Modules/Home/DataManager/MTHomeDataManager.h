@@ -15,7 +15,11 @@
  */
 @interface MTHomeDataManager : NSObject
 
-@property (nonatomic,strong)NSArray * sortedArray;
+@property (nonatomic,strong)NSMutableArray * assets;
+
+
+
+
 - (NSArray *)imagesWithAsset:(NSArray< PHAsset*>*)assets ;
 - (NSArray*)imageModesWithImages:(NSArray<UIImage *>*)images ;
 - (NSArray<UIImage*>*)imagesWithModelArray:(NSArray*)array ;

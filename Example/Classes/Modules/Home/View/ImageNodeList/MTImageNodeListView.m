@@ -10,7 +10,7 @@
 
 #import "MTSortedTableNode.h"
 #import "MTImageCellNode.h"
-@interface MTImageNodeListView ()<ASTableDelegate,ASTableDataSource>
+@interface MTImageNodeListView ()<ASTableDelegate,ASTableDataSource,MTSortedTableNodeDelegate>
 @property(nonatomic, strong) UIButton *bgButton;
 @property(nonatomic, strong) MTSortedTableNode *tableNode;
 @property(nonatomic, strong) NSMutableArray *modelArray;
@@ -24,7 +24,6 @@
     
     [self.tableNode reloadData];
     if(self.modelArray.count ==0){
-//        [self addSubview:self.bgButton];
         self.tableNode.frame = CGRectZero;
     }else{
         [self.bgButton removeFromSuperview];
@@ -85,29 +84,16 @@
     return YES;
 }
 
-//- (void)tableView:(ASTableView *)tableView willBeginBatchFetchWithContext:(ASBatchContext *)context {
-//    [self retrieveNextPageWithCompletion:^(NSArray *animals) {
-//        [self insertNewRowsInTableView:animals];
-//        [context completeBatchFetching:YES];
-//
-//    }];
-//}
-//
-//
-//- (void)retrieveNextPageWithCompletion:(void (^)(NSArray *))block {
-//    NSArray *moreAnimals = [[NSArray alloc] initWithArray:[self.modelArray subarrayWithRange:NSMakeRange(0, 10)] copyItems:NO];
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        block(moreAnimals);
-//
-//    });
-//}
-
-- (void)insertNewRowsInTableView:(NSArray *)newAnimals {
-    NSInteger oldCount = self.modelArray.count;
-    [self.modelArray addObjectsFromArray:newAnimals];
-//    [self.tableNode insertRowWithStart:oldCount NewCount:self.modelArray.count];
-    
+- (void)tableNode:(MTSortedTableNode *)tableNode didMoveNodeFromIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    [self mt_passEventName:@"sortEvent" fromObject:self withUserInfo:@{@"from":fromIndexPath,@"to":toIndexPath}];
 }
+
+//- (void)insertNewRowsInTableView:(NSArray *)newAnimals {
+//    NSInteger oldCount = self.modelArray.count;
+//    [self.modelArray addObjectsFromArray:newAnimals];
+////    [self.tableNode insertRowWithStart:oldCount NewCount:self.modelArray.count];
+//
+//}
 
 - (NSMutableArray *)dataSourceArrayInTableNode:(MTSortedTableNode *)tableNode {
 //    NSLog([self.modelArray description]);
@@ -118,8 +104,10 @@
 - ( void )sortedDataSourceArray:(NSMutableArray*)datasource inTableNode:(MTSortedTableNode *)tableNode {
    
 //    NSLog([datasource description]);
-    [self mt_passEventName:@"arraySorted" fromObject:self withUserInfo:@{@"array":datasource}];
+ 
 }
+
+
 
 
 
@@ -129,7 +117,7 @@
         MTSortedTableNode * tableNode = [[MTSortedTableNode alloc] initWithStyle:UITableViewStylePlain];
         tableNode.backgroundColor = [UIColor mt_colorWithHex:0xFEF7E7];
         tableNode.view.separatorStyle = UITableViewCellSeparatorStyleNone;
-//        tableNode.gestureEventHandler.sortDataSource = self;
+        tableNode.gestureEventHandler.delegate = self;
         tableNode.gestureEventHandler.sortDataSource = self;
         [self addSubnode:tableNode];
         

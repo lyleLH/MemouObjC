@@ -547,12 +547,12 @@
 		E21B4789267DFB7200CAB1DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E21B4791267DFB7200CAB1DE /* MTHomeModuleInterface.h */,
+				E21B4799267DFB7200CAB1DE /* Interactor */,
 				E21B478A267DFB7200CAB1DE /* DataManager */,
 				E21B478D267DFB7200CAB1DE /* Presenter */,
-				E21B4790267DFB7200CAB1DE /* ModuleInterface */,
 				E21B4792267DFB7200CAB1DE /* Wireframe */,
 				E21B4795267DFB7200CAB1DE /* View */,
-				E21B4799267DFB7200CAB1DE /* Interactor */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -574,14 +574,6 @@
 				E21B478F267DFB7200CAB1DE /* MTHomePresenter.m */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		E21B4790267DFB7200CAB1DE /* ModuleInterface */ = {
-			isa = PBXGroup;
-			children = (
-				E21B4791267DFB7200CAB1DE /* MTHomeModuleInterface.h */,
-			);
-			path = ModuleInterface;
 			sourceTree = "<group>";
 		};
 		E21B4792267DFB7200CAB1DE /* Wireframe */ = {

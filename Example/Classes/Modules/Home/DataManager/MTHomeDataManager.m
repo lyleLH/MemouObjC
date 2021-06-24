@@ -7,11 +7,7 @@
 //
 
 #import "MTHomeDataManager.h"
-//#import <FastImageCache/FastImageCache.h>
 
-
-
-//@interface MTHomeDataManager ()<FICImageCacheDelegate>
 @interface MTHomeDataManager ()
 
 @end
@@ -21,59 +17,10 @@
 
 - (instancetype)init {
     if(self){
-//        // Configure the image cache
-//        FICImageCache *sharedImageCache = [FICImageCache sharedImageCache];
-//        [sharedImageCache setDelegate:self];
-//
-//
-//        FICImageFormat *smallUserThumbnailImageFormat = [[FICImageFormat alloc] init];
-//        smallUserThumbnailImageFormat.name = XXImageFormatNameUserThumbnailSmall;
-//        smallUserThumbnailImageFormat.family = XXImageFormatFamilyUserThumbnails;
-//        smallUserThumbnailImageFormat.style = FICImageFormatStyle16BitBGR;
-//        smallUserThumbnailImageFormat.imageSize = CGSizeMake(kSCREEN_WIDTH, 200);
-//        smallUserThumbnailImageFormat.maximumCount = 250;
-//        smallUserThumbnailImageFormat.devices = FICImageFormatDevicePhone;
-//        smallUserThumbnailImageFormat.protectionMode = FICImageFormatProtectionModeNone;
-//
-//        FICImageFormat *mediumUserThumbnailImageFormat = [[FICImageFormat alloc] init];
-//        mediumUserThumbnailImageFormat.name = XXImageFormatNameUserThumbnailMedium;
-//        mediumUserThumbnailImageFormat.family = XXImageFormatFamilyUserThumbnails;
-//        mediumUserThumbnailImageFormat.style = FICImageFormatStyle32BitBGRA;
-//        mediumUserThumbnailImageFormat.imageSize = CGSizeMake(kSCREEN_WIDTH*3, 600);
-//        mediumUserThumbnailImageFormat.maximumCount = 250;
-//        mediumUserThumbnailImageFormat.devices = FICImageFormatDevicePhone;
-//        mediumUserThumbnailImageFormat.protectionMode = FICImageFormatProtectionModeNone;
-//
-//        NSArray *imageFormats = @[smallUserThumbnailImageFormat, mediumUserThumbnailImageFormat];
-//
-//        sharedImageCache.formats = imageFormats;
+
     }
     return self;
 }
-
-
-
-//- (void)imageCache:(FICImageCache *)imageCache wantsSourceImageForEntity:(id<FICEntity>)entity withFormatName:(NSString *)formatName completionBlock:(FICImageRequestCompletionBlock)completionBlock {
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//
-//        NSURL *filePathURL = [entity sourceImageURLWithFormatName:formatName];
-//        UIImage *sourceImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:filePathURL]];
-//
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            completionBlock(sourceImage);
-//        });
-//    });
-//}
-//
-//
-//- (BOOL)imageCache:(FICImageCache *)imageCache shouldProcessAllFormatsInFamily:(NSString *)formatFamily forEntity:(id<FICEntity>)entity {
-//    return NO;
-//}
-//
-//- (void)imageCache:(FICImageCache *)imageCache errorDidOccurWithMessage:(NSString *)errorMessage {
-//    NSLog(@"%@", errorMessage);
-//}
-//
 
 
 
@@ -112,7 +59,6 @@
         model.image = obj;
         [models addObject:model];
     }];
-    self.sortedArray = models;
     return models;
 }
 
@@ -126,7 +72,12 @@
     return images;
 }
 
-
+- (NSMutableArray *)assets {
+    if(!_assets){
+        _assets = [NSMutableArray new];
+    }
+    return _assets;
+}
 
 
 @end

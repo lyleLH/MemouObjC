@@ -7,41 +7,39 @@
 //
 
 #import "MTHomePresenter.h"
-#import <MTImagePickerObjC/MTImagePickerHeader.h>
 
-@interface MTHomePresenter ()<MTImagePickerProtocol>
+
+@interface MTHomePresenter ()
 @end
 
 @implementation MTHomePresenter
 
-#pragma mark - MTHomeModuleInterface methods
 
-// implement module interface here
+#pragma mark - MTHomeInteractorOutputProtocol methods
 
-
-
--(void)clickToChooseImage {
-    [[[MTImagePicker alloc] init] showImagePickerInViewController:self.userInterface withDelegate:self];
+- (void)imagePicked:(NSArray<PHAsset *> *)assets {
+    [self.userInterface updateListWithData:assets];
 }
 
-- (void)startToStitchImages {
-    [self.interactor prepareImages];
+#pragma mark - MTHomeViewOutputInterface methods
+- (void)chooseImageButtonEvent {
+    [self.interactor openImagePickerToChooseImage:@[]];
 }
 
-- (void)sortedNewArray:(NSArray *)array {
-    [self.interactor saveSortedArray:array[0]];
+
+- (void)updateImagesSortFromIndex:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    [self.interactor resortImagesWithFromIndexPath:fromIndexPath andToIndexPath:toIndexPath];
 }
 
-- (void)imagePickerDidselectedImageAssets:(NSArray*) images {
+- (void)clearButtonEvent {
+    
+}
+
+- (void)startButtonEvent {
+    [self.interactor autoStitchForPrew];
+}
+
  
-    [self.userInterface updateListWithData:[self.interactor requestImageModels:images]];
-}
-
-- (void)imagePickerDidselectedImages:(nonnull NSArray *)images {
-     
-}
-
-
 
 - (void)allImagesPrepared:(NSArray<UIImage *>*)images {
 

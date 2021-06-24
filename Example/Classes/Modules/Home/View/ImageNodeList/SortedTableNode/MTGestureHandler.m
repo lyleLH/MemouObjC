@@ -121,9 +121,9 @@
     if (currentIndexPath && ![self.selectedIndexPath isEqual:currentIndexPath]) {
         //交换数据源和cell
         [self updateDataSourceAndCellFromIndexPath:self.selectedIndexPath toIndexPath:currentIndexPath];
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(tableView:didMoveCellFromIndexPath:toIndexPath:)]) {
-//            [self.delegate tableView:self didMoveCellFromIndexPath:self.selectedIndexPath toIndexPath:currentIndexPath];
-//        }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(tableNode:didMoveNodeFromIndexPath:toIndexPath:)]) {
+            [self.delegate tableNode:self.tableNode didMoveNodeFromIndexPath:self.selectedIndexPath toIndexPath:currentIndexPath];
+        }
         self.selectedIndexPath = currentIndexPath;
     }
 }
