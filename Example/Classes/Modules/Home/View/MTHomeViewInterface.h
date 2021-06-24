@@ -20,8 +20,12 @@
 
 @protocol MTHomeViewOutputInterface <NSObject>
 
-- (void)clickToChooseImage;
-- (void)startToStitchImages;
-- (void)sortedNewArray:(NSArray *)array;
+- (void)chooseImageButtonEvent;
+ 
+- (void)updateImagesSortFromIndex:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath;
+ 
+- (void)clearButtonEvent;
+
+- (void)startButtonEvent;
 
 @end

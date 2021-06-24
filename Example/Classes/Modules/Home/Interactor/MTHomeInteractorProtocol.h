@@ -7,20 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <Photos/Photos.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol MTHomeInteractorOutputProtocol <NSObject>
 
 - (void)allImagesPrepared:(NSArray<UIImage *>*)images;
-
+- (void)imagePicked:(NSArray<PHAsset *>*)assets;
 @end
 
 @protocol MTHomeInteractorInputProtocol <NSObject>
 
-- (NSArray *)requestImageModels:(NSArray*)assets ;
-- (void)saveSortedArray:(NSArray*)modelArray  ;
-- (void)prepareImages;
+- (void)openImagePickerToChooseImage:(NSArray *)images;
+- (void)resortImagesWithFromIndexPath:(NSIndexPath*)fromIndexPath andToIndexPath:(NSIndexPath*)toIndexPath;
+ 
+- (void)autoStitchForPrew;
 
 @end
 

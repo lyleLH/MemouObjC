@@ -12,6 +12,13 @@
 @class MTSortedTableNode;
 
 
+
+@protocol MTSortedTableNodeDelegate <NSObject>
+- (void)tableNode:(MTSortedTableNode *_Nullable)tableNode didMoveNodeFromIndexPath:(NSIndexPath *_Nullable)fromIndexPath toIndexPath:(NSIndexPath *_Nullable)toIndexPath;
+
+@end
+
+
 @protocol MTSortedTableNodeDataSource <NSObject>
 /**
  DataSource数据来源
@@ -19,10 +26,10 @@
  @param tableNode MTSortedTableNode
  @return 数据来源
  */
-- (NSMutableArray *_Nullable)dataSourceArrayInTableNode:(MTSortedTableNode *)tableNode;
+- (NSMutableArray *_Nullable)dataSourceArrayInTableNode:(MTSortedTableNode *_Nullable)tableNode;
 
 //排序后的数组
-- ( void )sortedDataSourceArray:(NSMutableArray*)datasource inTableNode:(MTSortedTableNode *)tableNode;
+- ( void )sortedDataSourceArray:(NSMutableArray*_Nullable)datasource inTableNode:(MTSortedTableNode *_Nullable)tableNode;
 
 @end
 
@@ -34,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MTGestureHandler : NSObject
 
 @property (nonatomic,weak) MTSortedTableNode *tableNode;
-//@property (nonatomic,weak) id delegate;
+@property (nonatomic,weak) id <MTSortedTableNodeDelegate>delegate;
 @property (nonatomic,weak) id <MTSortedTableNodeDataSource> sortDataSource;
 
 /**
