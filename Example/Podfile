@@ -13,6 +13,7 @@ target 'Memou' do
   pod  'MTEmptySetComponent'
   pod 'Texture', '~> 3.0.0'
   pod  'LookinServer', :configurations => ['Debug']
+  pod 'YYKit'
 #  pod 'FastImageCache', '~> 1.5.1'
   # ${INCLUDED_PODVERSIONS}
 end

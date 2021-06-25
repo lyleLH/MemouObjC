@@ -38,7 +38,9 @@
 
 - (void)autoStitchForPrew {
     [self.stitcher mergeImages:self.dataManager.assets completion:^(SZImageGenerator * _Nonnull generator, NSError * _Nonnull error) {
-            
+        if(generator){
+            [self.presenter imageAutoStitchedForPreview:generator];
+        }
     }];
 }
 

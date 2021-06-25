@@ -17,8 +17,8 @@
 
 @implementation MTImagePreEditViewController
 
-- (void)setUpPreEditViewWithImages:(NSArray<UIImage *>*)images {
-    [self.preEditView configEditViewWithImages:images];
+- (void)updateUserinterfacePreEditView:(SZImageGenerator*)generator {
+    [self.preEditView configEditViewWithGenerator:generator];
 }
 
 - (void)updatePreviewWithImage:(UIImage *)image {
@@ -37,7 +37,7 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    [self.previewView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.preEditView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.to(self.view).left(0).top(0).right(0).bottom(0);
     }];
     [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {

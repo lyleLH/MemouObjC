@@ -13,8 +13,9 @@
  */
 
 @protocol MTImagePreEditViewInputInterface <NSObject>
+- (void)updateUserinterfacePreEditView:(SZImageGenerator*)generator;
+ 
 
-- (void)setUpPreEditViewWithImages:(NSArray<UIImage *>*)images;
 - (void)updatePreviewWithImage:(UIImage *)image;
 @end
 

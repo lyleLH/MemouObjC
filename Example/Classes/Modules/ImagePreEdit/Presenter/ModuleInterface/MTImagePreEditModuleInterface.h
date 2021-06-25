@@ -19,5 +19,7 @@
  Module delegate for the ImagePreEdit module.
  */
 @protocol MTImagePreEditModuleDelegate <NSObject>
-- (void)sortedImages:(NSArray<UIImage *> *)images;
+
+- (void)getImageGeneratorForPreEditView:(SZImageGenerator *)generator;
+
 @end

@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SZImageGenerator;
 @interface MTImagesPreEditView : UIView
 
 
-- (void)configEditViewWithImages:(NSArray<UIImage*>*)images;
+- (void)configEditViewWithGenerator:(SZImageGenerator*)generator ;
 @end
 
 NS_ASSUME_NONNULL_END

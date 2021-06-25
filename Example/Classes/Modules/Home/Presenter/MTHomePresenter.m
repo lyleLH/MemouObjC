@@ -43,10 +43,13 @@
 
 - (void)allImagesPrepared:(NSArray<UIImage *>*)images {
 
-    [self.wireframe presentEditInterface];
-    [self.editModuleDelegate sortedImages:images];
+  
+  
 }
 
- 
+- (void)imageAutoStitchedForPreview:(SZImageGenerator *)generator {
+    [self.wireframe presentEditInterface];
+    [self.editModuleDelegate getImageGeneratorForPreEditView:generator];
+}
 
 @end

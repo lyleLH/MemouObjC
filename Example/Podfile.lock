@@ -85,6 +85,9 @@ PODS:
   - Texture/Video (3.0.0):
     - Texture/Core
   - Toast (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - CYLTabBarController
@@ -94,6 +97,7 @@ DEPENDENCIES:
   - MTImagePickerObjC
   - MTLayoutUtilityComponent
   - Texture (~> 3.0.0)
+  - YYKit
 
 SPEC REPOS:
   https://github.com/lyleLH/MTSpecs:
@@ -113,6 +117,7 @@ SPEC REPOS:
     - pop
     - Texture
     - Toast
+    - YYKit
 
 SPEC CHECKSUMS:
   CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
@@ -130,7 +135,8 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 56e8314f48a2bf1ef3430c6a53e4e8fd893f5612
+PODFILE CHECKSUM: 71e07b1c7e0c640360d427d0e4daed55d4ff97f4
 
 COCOAPODS: 1.9.3

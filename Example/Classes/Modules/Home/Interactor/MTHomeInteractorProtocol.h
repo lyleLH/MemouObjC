@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)allImagesPrepared:(NSArray<UIImage *>*)images;
 - (void)imagePicked:(NSArray<PHAsset *>*)assets;
+- (void)imageAutoStitchedForPreview:(SZImageGenerator * _Nonnull) generator;
 @end
 
 @protocol MTHomeInteractorInputProtocol <NSObject>

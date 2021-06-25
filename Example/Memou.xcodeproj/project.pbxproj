@@ -68,6 +68,9 @@
 		E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE98268391B700808CD4 /* MTImagesPreViewView.m */; };
 		E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9C2683992500808CD4 /* MTEmptyView.m */; };
 		E244EE9F2683992F00808CD4 /* MTEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E244EE9E2683992F00808CD4 /* MTEmptyView.xib */; };
+		E244EEAB2685A22700808CD4 /* SZStichingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA52685A22700808CD4 /* SZStichingImageView.m */; };
+		E244EEAC2685A22700808CD4 /* SZEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA72685A22700808CD4 /* SZEditorView.m */; };
+		E244EEAD2685A22700808CD4 /* SZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA92685A22700808CD4 /* SZScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +210,12 @@
 		E244EE9B2683992500808CD4 /* MTEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEmptyView.h; sourceTree = "<group>"; };
 		E244EE9C2683992500808CD4 /* MTEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEmptyView.m; sourceTree = "<group>"; };
 		E244EE9E2683992F00808CD4 /* MTEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTEmptyView.xib; sourceTree = "<group>"; };
+		E244EEA52685A22700808CD4 /* SZStichingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZStichingImageView.m; sourceTree = "<group>"; };
+		E244EEA62685A22700808CD4 /* SZStichingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZStichingImageView.h; sourceTree = "<group>"; };
+		E244EEA72685A22700808CD4 /* SZEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZEditorView.m; sourceTree = "<group>"; };
+		E244EEA82685A22700808CD4 /* SZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZScrollView.h; sourceTree = "<group>"; };
+		E244EEA92685A22700808CD4 /* SZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZScrollView.m; sourceTree = "<group>"; };
+		E244EEAA2685A22700808CD4 /* SZEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZEditorView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,6 +537,7 @@
 				E21B476E267DF9D200CAB1DE /* MTImagePreEditViewController.m */,
 				E244EE7F26834B4100808CD4 /* MTImagesPreEditView.h */,
 				E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */,
+				E244EEA42685A20A00808CD4 /* PreEditViews */,
 				E244EE97268391B700808CD4 /* MTImagesPreViewView.h */,
 				E244EE98268391B700808CD4 /* MTImagesPreViewView.m */,
 			);
@@ -653,6 +663,19 @@
 				E244EE9E2683992F00808CD4 /* MTEmptyView.xib */,
 			);
 			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		E244EEA42685A20A00808CD4 /* PreEditViews */ = {
+			isa = PBXGroup;
+			children = (
+				E244EEAA2685A22700808CD4 /* SZEditorView.h */,
+				E244EEA72685A22700808CD4 /* SZEditorView.m */,
+				E244EEA82685A22700808CD4 /* SZScrollView.h */,
+				E244EEA92685A22700808CD4 /* SZScrollView.m */,
+				E244EEA62685A22700808CD4 /* SZStichingImageView.h */,
+				E244EEA52685A22700808CD4 /* SZStichingImageView.m */,
+			);
+			path = PreEditViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -811,6 +834,8 @@
 				E21B479C267DFB7200CAB1DE /* MTHomeDataManager.m in Sources */,
 				E21B477E267DF9D200CAB1DE /* MTImagePreEditViewController.m in Sources */,
 				E21B479E267DFB7200CAB1DE /* MTHomeWireframe.m in Sources */,
+				E244EEAB2685A22700808CD4 /* SZStichingImageView.m in Sources */,
+				E244EEAD2685A22700808CD4 /* SZScrollView.m in Sources */,
 				E21B47B0267E079F00CAB1DE /* MTImageCell.m in Sources */,
 				E21B47A3267DFF7F00CAB1DE /* MTRootWireframe.m in Sources */,
 				E244EE8526837AD600808CD4 /* SZImageGenerator.m in Sources */,
@@ -824,6 +849,7 @@
 				E21B477C267DF9D200CAB1DE /* MTImagePreEditPresenter.m in Sources */,
 				E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */,
 				E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */,
+				E244EEAC2685A22700808CD4 /* SZEditorView.m in Sources */,
 				E21B4775267DF9D200CAB1DE /* MemouConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E21B47A9267E061100CAB1DE /* BaseSortedTableView.m in Sources */,

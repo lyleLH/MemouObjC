@@ -17,10 +17,8 @@
 
 #pragma mark -- MTImagePreEditModuleDelegate
 
-- (void)sortedImages:(NSArray<UIImage *> *)images {
-    [self.userInterface  setUpPreEditViewWithImages:images];
-    [self.interactor.dataManager saveImages:images];
-    
+- (void)getImageGeneratorForPreEditView:(SZImageGenerator *)generator {
+    [self.userInterface updateUserinterfacePreEditView:generator];
 }
 
 - (void)saveStitchImageToAlbum {
