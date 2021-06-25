@@ -46,6 +46,11 @@
     
 }
 
+- (void)func2 {
+    
+}
+
+
 - (MTImageStitcher *)stitcher {
     if(!_stitcher){
         _stitcher = [[MTImageStitcher alloc] init];
