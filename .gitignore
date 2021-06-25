@@ -5,3 +5,4 @@ Example/Pods/OpenCV/opencv2.framework/opencv2
 Example/Pods/OpenCV/opencv2.framework/Versions/A/opencv2
 Example/Pods/OpenCV/opencv2.framework/Versions/A/opencv2
 
+*.xcbkptlist
