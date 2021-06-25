@@ -147,8 +147,6 @@
     }
     
     SZImageGenerator *generator = [[SZImageGenerator alloc] init];
-//    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-//    options.synchronous = YES;
     CFAbsoluteTime time = CFAbsoluteTimeGetCurrent();
     for (UIImage *image in images)
     {
