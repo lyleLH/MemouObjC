@@ -42,6 +42,14 @@
     }];
 }
 
+- (void)func1 {
+    
+}
+
+- (void)func2 {
+    
+}
+
 
 - (MTImageStitcher *)stitcher {
     if(!_stitcher){
