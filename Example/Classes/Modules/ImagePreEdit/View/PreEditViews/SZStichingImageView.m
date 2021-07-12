@@ -72,9 +72,9 @@
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (!_editing) {
-        return;
-    }
+//    if (!_editing) {
+//        return;
+//    }
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.superview];
     CGFloat offsetY = point.y - _touchBeganPoint.y;
@@ -92,9 +92,9 @@
     }
 }
 
-- (void)setEditing:(BOOL)editing {
-    _editing = editing;
-}
+//- (void)setEditing:(BOOL)editing {
+//    _editing = editing;
+//}
 
 - (CALayer *)coverLayer {
     if (!_coverLayer) {

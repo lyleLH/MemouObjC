@@ -19,7 +19,8 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.backgroundColor = [UIColor mt_colorWithHex:0xFEF7E7];
+        self.backgroundColor = [UIColor mt_colorWithHex:0x2583F3];
+        self.alpha = 0.3;
         [self configViews];
     }
     return self;
@@ -31,19 +32,19 @@
 }
 
 - (void)configViews {
-    _editorIcon = [UIButton buttonWithType:UIButtonTypeCustom];
-    _editorIcon.size = CGSizeMake(EDITORVIEW_SIZE, EDITORVIEW_SIZE);
-    [_editorIcon setImage:[UIImage imageNamed:@"stiching_edit"] forState:UIControlStateNormal];
-    [_editorIcon addTarget:self action:@selector(beganEditor:) forControlEvents:UIControlEventTouchUpInside];
-    _editorIcon.userInteractionEnabled = YES;
-    _editorIcon.backgroundColor =  [UIColor mt_colorWithHex:0xFEF7E7];
-    _editorIcon.layer.cornerRadius = EDITORVIEW_SIZE/2;
-    _editorIcon.clipsToBounds = YES;
-    NSInteger space = 8;
-    [_editorIcon setImageEdgeInsets:UIEdgeInsetsMake(space, space, space, space)];
-//    UIGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(beganEditor:)];
-//    [_editorIcon addGestureRecognizer:gesture];
-    [self addSubview:_editorIcon];
+//    _editorIcon = [UIButton buttonWithType:UIButtonTypeCustom];
+//    _editorIcon.size = CGSizeMake(EDITORVIEW_SIZE, EDITORVIEW_SIZE);
+//    [_editorIcon setImage:[UIImage imageNamed:@"stiching_edit"] forState:UIControlStateNormal];
+//    [_editorIcon addTarget:self action:@selector(beganEditor:) forControlEvents:UIControlEventTouchUpInside];
+//    _editorIcon.userInteractionEnabled = YES;
+//    _editorIcon.backgroundColor =  [UIColor mt_colorWithHex:0xFEF7E7];
+//    _editorIcon.layer.cornerRadius = EDITORVIEW_SIZE/2;
+//    _editorIcon.clipsToBounds = YES;
+//    NSInteger space = 8;
+//    [_editorIcon setImageEdgeInsets:UIEdgeInsetsMake(space, space, space, space)];
+////    UIGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(beganEditor:)];
+////    [_editorIcon addGestureRecognizer:gesture];
+//    [self addSubview:_editorIcon];
 }
 
 - (void)beganEditor:(UIButton *)btn {
@@ -67,10 +68,10 @@
 }
 
 
-- (void)setEditing:(BOOL)editing {
-    _editing = editing;
-    self.firstImageView.editing = editing;
-    self.lastImageView.editing = editing;
-}
+//- (void)setEditing:(BOOL)editing {
+//    _editing = editing;
+//    self.firstImageView.editing = editing;
+//    self.lastImageView.editing = editing;
+//}
 
 @end

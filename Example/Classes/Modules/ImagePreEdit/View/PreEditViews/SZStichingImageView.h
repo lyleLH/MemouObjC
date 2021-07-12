@@ -15,5 +15,5 @@
 @property (nonatomic, copy) void(^touchMove)(SZStichingImageView *stichingImageView, CGFloat offsetY);
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImage *image;
-@property (nonatomic, assign, getter=isEditing) BOOL editing;
+//@property (nonatomic, assign, getter=isEditing) BOOL editing;
 @end

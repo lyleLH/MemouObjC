@@ -23,8 +23,7 @@
 @property (nonatomic, strong) SZImageGenerator *generator;
 @property (nonatomic, strong) NSMutableArray <SZEditorView*>*editViews;
 @property (nonatomic, strong) NSMutableArray <SZStichingImageView*>*imageViews;
-
-@property (nonatomic, assign) BOOL scrollEnable;
+ 
 @property (nonatomic,assign)  CGFloat          totoalHeight;
 
 @end
@@ -44,15 +43,15 @@
         return;
     }
     [self.editViews removeAllObjects];
-    self.scrollEnable = YES;
+//    self.scrollEnable = YES;
     __block NSInteger editTouchIndex = 0;
     kWeakSelf(self);
     for (NSInteger i = 0; i <= _generator.infos.count + 1; i ++) {
         SZEditorView *editorView = [SZEditorView new];
         editorView.touchBegan = ^(SZEditorView *editorView) {
             kStrongSelf(self);
-            self.scrollEnable = !editorView.editorIcon.isSelected;
-            self.scrollView.scrollEnabled = self.scrollEnable;
+//            self.scrollEnable = !editorView.editorIcon.isSelected;
+//            self.scrollView.scrollEnabled = self.scrollEnable;
             for (SZEditorView *editor in self.editViews) {
                 editor.editing = NO;
             }
@@ -69,7 +68,10 @@
     
     SZImageMergeInfo *firstInfo = _generator.infos.firstObject;
     CGFloat firstImagescale = kSCREEN_WIDTH / firstInfo.firstImage.size.width;
+    
+    
     SZStichingImageView *lastImageView = [[SZStichingImageView alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH-30, firstInfo.firstImage.size.height * firstImagescale)];
+    
     lastImageView.image = firstInfo.firstImage;
     lastImageView.touchMove = ^(SZStichingImageView *stichingImageView, CGFloat offsetY) {
         kStrongSelf(self)
@@ -121,6 +123,8 @@
     [self.scrollView addSubview:lastImageView];
     [self.scrollView addSubview:firstEditorView];
     [self.imageViews addObject:lastImageView];
+    
+    
     
     NSInteger index = 0;
     for (SZImageMergeInfo *info in _generator.infos) {
@@ -276,11 +280,11 @@
     if ((inlineIndex + 1) < self.imageViews.count) {
         for (NSInteger i = inlineIndex + 1; i < self.imageViews.count; i ++) {
             SZStichingImageView *imageView = self.imageViews[i];
-            if (i == (inlineIndex + 1) && !isFirstImage) {
-                if (imageView.isEditing) {
-                    break;
-                }
-            }
+//            if (i == (inlineIndex + 1) && !isFirstImage) {
+//                if (imageView.isEditing) {
+//                    break;
+//                }
+//            }
             imageView.top = lastStichimageView.bottom;
             lastStichimageView = imageView;
         }
@@ -297,11 +301,11 @@
     if ((inlineIndex - 1) >= 0) {
         for (NSInteger i =  inlineIndex - 1 ; i >= 0; i --) {
             SZStichingImageView *imageView = self.imageViews[i];
-            if (i == (inlineIndex - 1) && !isLastImage) {
-                if (imageView.isEditing) {
-                    break;
-                }
-            }
+//            if (i == (inlineIndex - 1) && !isLastImage) {
+//                if (imageView.isEditing) {
+//                    break;
+//                }
+//            }
             imageView.top = imageView.top + offsetY;
             lastStichimageView = imageView;
         }
@@ -388,4 +392,10 @@
 }
 
 
+- (NSMutableArray<SZEditorView *> *)editViews {
+    if(!_editViews){
+        _editViews = [NSMutableArray new];
+    }
+    return _editViews;
+}
 @end
