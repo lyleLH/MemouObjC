@@ -1,0 +1,6 @@
+framework module ServiceProtocols {
+  umbrella header "ServiceProtocols-umbrella.h"
+
+  export *
+  module * { export * }
+}

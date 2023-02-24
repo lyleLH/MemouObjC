@@ -7,8 +7,8 @@
 //
 
 #import "MTHomePresenter.h"
-
-
+#import <MTBaseKit/MTBaseKitHeader.h>
+#import <ServiceProtocols/ServiceProtocolsHeader.h>
 @interface MTHomePresenter ()
 @end
 
@@ -36,20 +36,13 @@
 }
 
 - (void)startButtonEvent {
-    [self.interactor autoStitchForPrew];
+    
+    Class<MMImageEditProtocol> service = MTModuleServiceWithProtocol(@protocol(MMImageEditProtocol), nil);
+    [service updateSelectedImages:self.interactor.dataManager.assets];
 }
 
- 
 
-- (void)allImagesPrepared:(NSArray<UIImage *>*)images {
 
-  
-  
-}
 
-- (void)imageAutoStitchedForPreview:(SZImageGenerator *)generator {
-    [self.wireframe presentEditInterface];
-    [self.editModuleDelegate getImageGeneratorForPreEditView:generator];
-}
 
 @end

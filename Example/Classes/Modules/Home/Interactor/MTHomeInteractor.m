@@ -10,7 +10,6 @@
 #import <MTImagePickerObjC/MTImagePickerHeader.h>
 #import "MTImageStitcher.h"
 @interface MTHomeInteractor ()<MTImagePickerProtocol>
-@property (nonatomic,strong) MTImageStitcher * stitcher ;
 @end
 
 
@@ -36,13 +35,7 @@
     [self.dataManager.assets exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
 }
 
-- (void)autoStitchForPrew {
-    [self.stitcher mergeImages:self.dataManager.assets completion:^(SZImageGenerator * _Nonnull generator, NSError * _Nonnull error) {
-        if(generator){
-            [self.presenter imageAutoStitchedForPreview:generator];
-        }
-    }];
-}
+
 
 - (void)func1 {
     
@@ -53,10 +46,4 @@
 }
 
 
-- (MTImageStitcher *)stitcher {
-    if(!_stitcher){
-        _stitcher = [[MTImageStitcher alloc] init];
-    }
-    return _stitcher;
-}
 @end

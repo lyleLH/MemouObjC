@@ -29,7 +29,7 @@ Github : https://github.com/lyleLH
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YKSelector : NSObject
+@interface MTSelector : NSObject
 @property (nonatomic,weak) id target;
 @property (nonatomic) SEL action;
 - (void)perform:(id)obj id:(NSString *)identifier;
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加一个SEL方法，identifier 为 identifier
 - (void)mt_addTarget:(id)target sel:(SEL)sel identifier:(NSString *)identifer;
 /// 通过 identifier 取出一个 sel
-- (YKSelector *)mt_target:(NSString *)identifier;
+- (MTSelector *)mt_target:(NSString *)identifier;
 /// 删除 sel
 - (void)mt_removeTarget:(NSString *)identifier;
 /// 调用sel

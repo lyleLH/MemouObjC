@@ -1,0 +1,6 @@
+framework module ImagePreEdit {
+  umbrella header "ImagePreEdit-umbrella.h"
+
+  export *
+  module * { export * }
+}

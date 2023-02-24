@@ -1,1 +1,0 @@
-../../../MTCategoryComponent/MTCategoryComponent/Classes/UIKit/UIColor/MTUIColorExtensionHeader.h

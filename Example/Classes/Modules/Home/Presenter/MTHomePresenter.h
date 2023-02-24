@@ -13,7 +13,6 @@
 #import "MTHomeInteractor.h"
 #import "MTHomeWireframe.h"
 #import "MTHomeViewInterface.h"
-#import "MTImagePreEditModuleInterface.h"
 #import "MTHomeInteractorProtocol.h"
 @class MTHomeWireframe;
 @class MTHomeInteractor;
@@ -26,7 +25,6 @@
 @property (nonatomic, strong) MTHomeInteractor *interactor;
 @property (nonatomic, weak) MTHomeWireframe *wireframe;
 
-@property (nonatomic, weak) id<MTImagePreEditModuleDelegate> editModuleDelegate;
 
 @property (nonatomic, weak) UIViewController<MTHomeViewInputInterface> *userInterface;
 

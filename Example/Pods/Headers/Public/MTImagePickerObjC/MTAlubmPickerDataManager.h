@@ -1,1 +1,0 @@
-../../../MTImagePickerObjC/MTImagePickerObjC/Classes/AlubmPicker/DataManager/MTAlubmPickerDataManager.h

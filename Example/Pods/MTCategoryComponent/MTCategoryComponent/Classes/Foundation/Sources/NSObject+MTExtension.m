@@ -22,7 +22,7 @@ Github : https://github.com/lyleLH
 #import "NSObject+MTExtension.h"
 #import <objc/runtime.h>
 
-@implementation YKSelector
+@implementation MTSelector
 
 - (void)perform:(id)obj id:(NSString *)identifier {
     if ([self.target respondsToSelector:self.action]) {
@@ -44,7 +44,7 @@ Github : https://github.com/lyleLH
 
 - (void)mt_addTarget:(id)target sel:(SEL)sel identifier:(NSString *)identifer {
     if (!target || !sel) return;
-    YKSelector *s = [YKSelector new];
+    MTSelector *s = [MTSelector new];
     s.target = target;
     s.action = sel;
     objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(identifer), s, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -54,12 +54,12 @@ Github : https://github.com/lyleLH
     [self mt_addTarget:target sel:sel identifier:NSStringFromSelector(sel)];
 }
 
-- (YKSelector *)mt_target:(NSString *)identifier {
+- (MTSelector *)mt_target:(NSString *)identifier {
     return objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(identifier));
 }
 
 - (void)mt_callSel:(NSString *)identifier obj:(id)obj {
-    YKSelector *s = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(identifier));
+    MTSelector *s = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(identifier));
     [s perform:obj id:identifier];
 }
 

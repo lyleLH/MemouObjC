@@ -1,0 +1,6 @@
+framework module MTImagePickerObjC {
+  umbrella header "MTImagePickerObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}

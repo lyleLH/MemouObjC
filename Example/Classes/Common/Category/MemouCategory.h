@@ -13,7 +13,3 @@
 #import <MTCategoryComponent/UIResponder+MTExtension.h>
 #import "UIViewController+MTNaviBarItem.h"
 
-#import "UIImage+Logo.h"
-
-#import "UIImage+Clip.h"
-#import "UIImage+Rotate.h"

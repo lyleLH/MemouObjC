@@ -1,1 +1,0 @@
-../../../MTImagePickerObjC/MTImagePickerObjC/Classes/MTImagePickerProtocol.h

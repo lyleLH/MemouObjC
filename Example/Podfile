@@ -5,7 +5,9 @@ source 'https://github.com/lyleLH/MTSpecs.git'
 
 platform :ios, '10.0'
 
+use_frameworks! :linkage => :static
 target 'Memou' do
+  pod 'MTBaseKit'
   pod  'MTLayoutUtilityComponent'
   pod  'MTCategoryComponent'
   pod  'CYLTabBarController'
@@ -13,9 +15,11 @@ target 'Memou' do
   pod  'MTEmptySetComponent'
   pod 'Texture', '~> 3.0.0'
   pod  'LookinServer', :configurations => ['Debug']
-  pod 'YYKit'
 #  pod 'FastImageCache', '~> 1.5.1'
   # ${INCLUDED_PODVERSIONS}
+ pod 'ServiceProtocols',:path =>'./modules/ServiceProtocols'
+  pod 'ImagePreview',:path =>'./modules/ImagePreview'
+  pod 'ImagePreEdit',:path =>'./modules/ImagePreEdit'
 end
 
 # target 'Memou_Tests', :exclusive => true do

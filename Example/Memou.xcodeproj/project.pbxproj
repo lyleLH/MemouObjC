@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45CD2A243A927E6540F9E591 /* libPods-Memou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE18540403AF382645E39C5 /* libPods-Memou.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -26,20 +25,14 @@
 		C8871940267F31EE00E9D03C /* MTImageNodeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C887193F267F31EE00E9D03C /* MTImageNodeListView.m */; };
 		C887197A267F55A800E9D03C /* MTImageCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C8871979267F55A800E9D03C /* MTImageCellNode.m */; };
 		C899F4AA25E4F0CB00A15F39 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C899F4A925E4F0CB00A15F39 /* WebKit.framework */; };
-		E21B4774267DF9D200CAB1DE /* UIColor+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4747267DF9D200CAB1DE /* UIColor+MTExtension.m */; };
 		E21B4775267DF9D200CAB1DE /* MemouConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B474B267DF9D200CAB1DE /* MemouConfig.m */; };
 		E21B4776267DF9D200CAB1DE /* MemouConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B474C267DF9D200CAB1DE /* MemouConstants.m */; };
 		E21B4777267DF9D200CAB1DE /* MemouDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B475B267DF9D200CAB1DE /* MemouDeviceUtility.m */; };
 		E21B4778267DF9D200CAB1DE /* MemouDateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B475C267DF9D200CAB1DE /* MemouDateUtility.m */; };
 		E21B4779267DF9D200CAB1DE /* MemouStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B475D267DF9D200CAB1DE /* MemouStringUtility.m */; };
 		E21B477A267DF9D200CAB1DE /* MemouFontUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B475F267DF9D200CAB1DE /* MemouFontUtility.m */; };
-		E21B477B267DF9D200CAB1DE /* MTImagePreEditDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4764267DF9D200CAB1DE /* MTImagePreEditDataManager.m */; };
-		E21B477C267DF9D200CAB1DE /* MTImagePreEditPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4767267DF9D200CAB1DE /* MTImagePreEditPresenter.m */; };
-		E21B477D267DF9D200CAB1DE /* MTImagePreEditWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B476C267DF9D200CAB1DE /* MTImagePreEditWireframe.m */; };
-		E21B477E267DF9D200CAB1DE /* MTImagePreEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B476E267DF9D200CAB1DE /* MTImagePreEditViewController.m */; };
-		E21B477F267DF9D200CAB1DE /* MTImagePreEditInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4772267DF9D200CAB1DE /* MTImagePreEditInteractor.m */; };
 		E21B4786267DFB0E00CAB1DE /* MemouAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4781267DFB0E00CAB1DE /* MemouAppDependencies.m */; };
-		E21B4787267DFB0E00CAB1DE /* MemouAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.mm */; };
+		E21B4787267DFB0E00CAB1DE /* MemouAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.m */; };
 		E21B479C267DFB7200CAB1DE /* MTHomeDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B478C267DFB7200CAB1DE /* MTHomeDataManager.m */; };
 		E21B479D267DFB7200CAB1DE /* MTHomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B478F267DFB7200CAB1DE /* MTHomePresenter.m */; };
 		E21B479E267DFB7200CAB1DE /* MTHomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B4794267DFB7200CAB1DE /* MTHomeWireframe.m */; };
@@ -51,26 +44,12 @@
 		E21B47AC267E065600CAB1DE /* MySortedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B47AA267E065500CAB1DE /* MySortedTableView.m */; };
 		E21B47B0267E079F00CAB1DE /* MTImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B47AE267E079F00CAB1DE /* MTImageCell.m */; };
 		E21B47B1267E079F00CAB1DE /* MTImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21B47AF267E079F00CAB1DE /* MTImageCell.xib */; };
-		E21B47B4267E385100CAB1DE /* UIImage+Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B47B3267E385100CAB1DE /* UIImage+Clip.m */; };
 		E21B47B82680D06C00CAB1DE /* MTSortedTableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B47B72680D06C00CAB1DE /* MTSortedTableNode.m */; };
 		E21B47BB2680D21500CAB1DE /* MTGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E21B47BA2680D21500CAB1DE /* MTGestureHandler.m */; };
 		E21FE0B92682014A001F4DF9 /* UIViewController+MTNaviBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E21FE0B82682014A001F4DF9 /* UIViewController+MTNaviBarItem.m */; };
-		E244EE7726831BA700808CD4 /* MTImageStitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE7626831BA700808CD4 /* MTImageStitcher.m */; };
-		E244EE7A26831CB300808CD4 /* UIImage+Logo.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE7926831CB300808CD4 /* UIImage+Logo.m */; };
-		E244EE7D26831F1C00808CD4 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE7C26831F1C00808CD4 /* UIImage+Rotate.m */; };
-		E244EE8126834B4100808CD4 /* MTImagesPreEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */; };
-		E244EE8526837AD600808CD4 /* SZImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8426837AD600808CD4 /* SZImageGenerator.m */; };
-		E244EE8826837AE300808CD4 /* SZImageMergeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */; };
-		E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8A26837AF400808CD4 /* SZImageFinger.m */; };
-		E244EE8E26837B0100808CD4 /* SZConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE8D26837B0100808CD4 /* SZConstraint.m */; };
-		E244EE9226837B2800808CD4 /* UIImage+Stiching.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9126837B2800808CD4 /* UIImage+Stiching.m */; };
-		E244EE9626838F5900808CD4 /* SZMergeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9526838F5900808CD4 /* SZMergeResult.m */; };
-		E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE98268391B700808CD4 /* MTImagesPreViewView.m */; };
 		E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EE9C2683992500808CD4 /* MTEmptyView.m */; };
 		E244EE9F2683992F00808CD4 /* MTEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E244EE9E2683992F00808CD4 /* MTEmptyView.xib */; };
-		E244EEAB2685A22700808CD4 /* SZStichingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA52685A22700808CD4 /* SZStichingImageView.m */; };
-		E244EEAC2685A22700808CD4 /* SZEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA72685A22700808CD4 /* SZEditorView.m */; };
-		E244EEAD2685A22700808CD4 /* SZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244EEA92685A22700808CD4 /* SZScrollView.m */; };
+		F4E7A8C3F016C93F1E47EB20 /* Pods_Memou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4809E13C9BD841C7F995707A /* Pods_Memou.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		083B0766F67CC0CE9BFB5BEA /* Pods-Memou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memou.debug.xcconfig"; path = "Target Support Files/Pods-Memou/Pods-Memou.debug.xcconfig"; sourceTree = "<group>"; };
+		17784AAECF26FD27A10122BA /* Pods-Memou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memou.release.xcconfig"; path = "Target Support Files/Pods-Memou/Pods-Memou.release.xcconfig"; sourceTree = "<group>"; };
+		4809E13C9BD841C7F995707A /* Pods_Memou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* Memou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,9 +79,6 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		63495C3B6961612BB687573D /* Pods-Memou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memou.release.xcconfig"; path = "Target Support Files/Pods-Memou/Pods-Memou.release.xcconfig"; sourceTree = "<group>"; };
-		8DE18540403AF382645E39C5 /* libPods-Memou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A94814A1960E47C2474CDF4 /* Pods-Memou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memou.debug.xcconfig"; path = "Target Support Files/Pods-Memou/Pods-Memou.debug.xcconfig"; sourceTree = "<group>"; };
 		AB23DFBF1BA94B4900F13CE2 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		AB23DFC11BA94BAA00F13CE2 /* HaidoraRefresh.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HaidoraRefresh.strings; sourceTree = "<group>"; };
 		AB23DFC21BA94BAA00F13CE2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -114,8 +93,6 @@
 		C8871979267F55A800E9D03C /* MTImageCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImageCellNode.m; sourceTree = "<group>"; };
 		C899F4A925E4F0CB00A15F39 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E21B4746267DF9D200CAB1DE /* MemouCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemouCategory.h; sourceTree = "<group>"; };
-		E21B4747267DF9D200CAB1DE /* UIColor+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MTExtension.m"; sourceTree = "<group>"; };
-		E21B4748267DF9D200CAB1DE /* UIColor+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTExtension.h"; sourceTree = "<group>"; };
 		E21B4749267DF9D200CAB1DE /* MemouCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemouCommon.h; sourceTree = "<group>"; };
 		E21B474B267DF9D200CAB1DE /* MemouConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouConfig.m; sourceTree = "<group>"; };
 		E21B474C267DF9D200CAB1DE /* MemouConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouConstants.m; sourceTree = "<group>"; };
@@ -134,22 +111,10 @@
 		E21B475D267DF9D200CAB1DE /* MemouStringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouStringUtility.m; sourceTree = "<group>"; };
 		E21B475E267DF9D200CAB1DE /* MemouUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemouUtility.h; sourceTree = "<group>"; };
 		E21B475F267DF9D200CAB1DE /* MemouFontUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouFontUtility.m; sourceTree = "<group>"; };
-		E21B4763267DF9D200CAB1DE /* MTImagePreEditDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditDataManager.h; sourceTree = "<group>"; };
-		E21B4764267DF9D200CAB1DE /* MTImagePreEditDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImagePreEditDataManager.m; sourceTree = "<group>"; };
-		E21B4766267DF9D200CAB1DE /* MTImagePreEditPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditPresenter.h; sourceTree = "<group>"; };
-		E21B4767267DF9D200CAB1DE /* MTImagePreEditPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImagePreEditPresenter.m; sourceTree = "<group>"; };
-		E21B4769267DF9D200CAB1DE /* MTImagePreEditModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditModuleInterface.h; sourceTree = "<group>"; };
-		E21B476B267DF9D200CAB1DE /* MTImagePreEditWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditWireframe.h; sourceTree = "<group>"; };
-		E21B476C267DF9D200CAB1DE /* MTImagePreEditWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImagePreEditWireframe.m; sourceTree = "<group>"; };
-		E21B476E267DF9D200CAB1DE /* MTImagePreEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImagePreEditViewController.m; sourceTree = "<group>"; };
-		E21B476F267DF9D200CAB1DE /* MTImagePreEditViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditViewInterface.h; sourceTree = "<group>"; };
-		E21B4770267DF9D200CAB1DE /* MTImagePreEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditViewController.h; sourceTree = "<group>"; };
-		E21B4772267DF9D200CAB1DE /* MTImagePreEditInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImagePreEditInteractor.m; sourceTree = "<group>"; };
-		E21B4773267DF9D200CAB1DE /* MTImagePreEditInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditInteractor.h; sourceTree = "<group>"; };
 		E21B4780267DFB0E00CAB1DE /* MemouAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemouAppDelegate.h; sourceTree = "<group>"; };
 		E21B4781267DFB0E00CAB1DE /* MemouAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouAppDependencies.m; sourceTree = "<group>"; };
 		E21B4782267DFB0E00CAB1DE /* MemouAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemouAppDependencies.h; sourceTree = "<group>"; };
-		E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MemouAppDelegate.mm; sourceTree = "<group>"; };
+		E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemouAppDelegate.m; sourceTree = "<group>"; };
 		E21B478B267DFB7200CAB1DE /* MTHomeDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeDataManager.h; sourceTree = "<group>"; };
 		E21B478C267DFB7200CAB1DE /* MTHomeDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHomeDataManager.m; sourceTree = "<group>"; };
 		E21B478E267DFB7200CAB1DE /* MTHomePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomePresenter.h; sourceTree = "<group>"; };
@@ -173,8 +138,6 @@
 		E21B47AD267E079F00CAB1DE /* MTImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImageCell.h; sourceTree = "<group>"; };
 		E21B47AE267E079F00CAB1DE /* MTImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImageCell.m; sourceTree = "<group>"; };
 		E21B47AF267E079F00CAB1DE /* MTImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTImageCell.xib; sourceTree = "<group>"; };
-		E21B47B2267E385000CAB1DE /* UIImage+Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Clip.h"; sourceTree = "<group>"; };
-		E21B47B3267E385100CAB1DE /* UIImage+Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Clip.m"; sourceTree = "<group>"; };
 		E21B47B62680D06C00CAB1DE /* MTSortedTableNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSortedTableNode.h; sourceTree = "<group>"; };
 		E21B47B72680D06C00CAB1DE /* MTSortedTableNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSortedTableNode.m; sourceTree = "<group>"; };
 		E21B47B92680D21500CAB1DE /* MTGestureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTGestureHandler.h; sourceTree = "<group>"; };
@@ -183,39 +146,9 @@
 		E21FE0B82682014A001F4DF9 /* UIViewController+MTNaviBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTNaviBarItem.m"; sourceTree = "<group>"; };
 		E21FE0F426822D6C001F4DF9 /* Memou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memou-Bridging-Header.h"; sourceTree = "<group>"; };
 		E21FE0FD2682340E001F4DF9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		E244EE7526831BA700808CD4 /* MTImageStitcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImageStitcher.h; sourceTree = "<group>"; };
-		E244EE7626831BA700808CD4 /* MTImageStitcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImageStitcher.m; sourceTree = "<group>"; };
-		E244EE7826831CB300808CD4 /* UIImage+Logo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Logo.h"; sourceTree = "<group>"; };
-		E244EE7926831CB300808CD4 /* UIImage+Logo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Logo.m"; sourceTree = "<group>"; };
-		E244EE7B26831F1C00808CD4 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
-		E244EE7C26831F1C00808CD4 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
-		E244EE7E26834A3200808CD4 /* MTImagePreEditInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagePreEditInteractorProtocol.h; sourceTree = "<group>"; };
-		E244EE7F26834B4100808CD4 /* MTImagesPreEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagesPreEditView.h; sourceTree = "<group>"; };
-		E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagesPreEditView.m; sourceTree = "<group>"; };
-		E244EE8326837AD600808CD4 /* SZImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageGenerator.h; sourceTree = "<group>"; };
-		E244EE8426837AD600808CD4 /* SZImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageGenerator.m; sourceTree = "<group>"; };
-		E244EE8626837AE300808CD4 /* SZImageMergeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageMergeInfo.h; sourceTree = "<group>"; };
-		E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageMergeInfo.m; sourceTree = "<group>"; };
-		E244EE8926837AF400808CD4 /* SZImageFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageFinger.h; sourceTree = "<group>"; };
-		E244EE8A26837AF400808CD4 /* SZImageFinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageFinger.m; sourceTree = "<group>"; };
-		E244EE8C26837B0100808CD4 /* SZConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZConstraint.h; sourceTree = "<group>"; };
-		E244EE8D26837B0100808CD4 /* SZConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZConstraint.m; sourceTree = "<group>"; };
-		E244EE9026837B2800808CD4 /* UIImage+Stiching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Stiching.h"; sourceTree = "<group>"; };
-		E244EE9126837B2800808CD4 /* UIImage+Stiching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Stiching.m"; sourceTree = "<group>"; };
-		E244EE9326838F0000808CD4 /* MTImageStitchDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImageStitchDelegate.h; sourceTree = "<group>"; };
-		E244EE9426838F5900808CD4 /* SZMergeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZMergeResult.h; sourceTree = "<group>"; };
-		E244EE9526838F5900808CD4 /* SZMergeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZMergeResult.m; sourceTree = "<group>"; };
-		E244EE97268391B700808CD4 /* MTImagesPreViewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImagesPreViewView.h; sourceTree = "<group>"; };
-		E244EE98268391B700808CD4 /* MTImagesPreViewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImagesPreViewView.m; sourceTree = "<group>"; };
 		E244EE9B2683992500808CD4 /* MTEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEmptyView.h; sourceTree = "<group>"; };
 		E244EE9C2683992500808CD4 /* MTEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEmptyView.m; sourceTree = "<group>"; };
 		E244EE9E2683992F00808CD4 /* MTEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTEmptyView.xib; sourceTree = "<group>"; };
-		E244EEA52685A22700808CD4 /* SZStichingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZStichingImageView.m; sourceTree = "<group>"; };
-		E244EEA62685A22700808CD4 /* SZStichingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZStichingImageView.h; sourceTree = "<group>"; };
-		E244EEA72685A22700808CD4 /* SZEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZEditorView.m; sourceTree = "<group>"; };
-		E244EEA82685A22700808CD4 /* SZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZScrollView.h; sourceTree = "<group>"; };
-		E244EEA92685A22700808CD4 /* SZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZScrollView.m; sourceTree = "<group>"; };
-		E244EEAA2685A22700808CD4 /* SZEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZEditorView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +160,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				C899F4AA25E4F0CB00A15F39 /* WebKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				45CD2A243A927E6540F9E591 /* libPods-Memou.a in Frameworks */,
+				F4E7A8C3F016C93F1E47EB20 /* Pods_Memou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +206,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				8DE18540403AF382645E39C5 /* libPods-Memou.a */,
+				4809E13C9BD841C7F995707A /* Pods_Memou.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				E21B4780267DFB0E00CAB1DE /* MemouAppDelegate.h */,
-				E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.mm */,
+				E21B4784267DFB0E00CAB1DE /* MemouAppDelegate.m */,
 				E21B4782267DFB0E00CAB1DE /* MemouAppDependencies.h */,
 				E21B4781267DFB0E00CAB1DE /* MemouAppDependencies.m */,
 				E21B47A1267DFF7F00CAB1DE /* MTRootWireframe.h */,
@@ -331,8 +264,8 @@
 		6CF8687A5A3F3A24C14497C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A94814A1960E47C2474CDF4 /* Pods-Memou.debug.xcconfig */,
-				63495C3B6961612BB687573D /* Pods-Memou.release.xcconfig */,
+				083B0766F67CC0CE9BFB5BEA /* Pods-Memou.debug.xcconfig */,
+				17784AAECF26FD27A10122BA /* Pods-Memou.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -398,17 +331,7 @@
 		E21B4745267DF9D200CAB1DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E244EE9026837B2800808CD4 /* UIImage+Stiching.h */,
-				E244EE9126837B2800808CD4 /* UIImage+Stiching.m */,
 				E21B4746267DF9D200CAB1DE /* MemouCategory.h */,
-				E244EE7B26831F1C00808CD4 /* UIImage+Rotate.h */,
-				E244EE7C26831F1C00808CD4 /* UIImage+Rotate.m */,
-				E244EE7826831CB300808CD4 /* UIImage+Logo.h */,
-				E244EE7926831CB300808CD4 /* UIImage+Logo.m */,
-				E21B47B2267E385000CAB1DE /* UIImage+Clip.h */,
-				E21B47B3267E385100CAB1DE /* UIImage+Clip.m */,
-				E21B4747267DF9D200CAB1DE /* UIColor+MTExtension.m */,
-				E21B4748267DF9D200CAB1DE /* UIColor+MTExtension.h */,
 				E21FE0B72682014A001F4DF9 /* UIViewController+MTNaviBarItem.h */,
 				E21FE0B82682014A001F4DF9 /* UIViewController+MTNaviBarItem.m */,
 			);
@@ -438,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				E21B4752267DF9D200CAB1DE /* MemouHelper.h */,
-				E244EE8226834E5B00808CD4 /* ImageHelpers */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -474,84 +396,8 @@
 			isa = PBXGroup;
 			children = (
 				E21B4789267DFB7200CAB1DE /* Home */,
-				E21B4761267DF9D200CAB1DE /* ImagePreEdit */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		E21B4761267DF9D200CAB1DE /* ImagePreEdit */ = {
-			isa = PBXGroup;
-			children = (
-				E21B4762267DF9D200CAB1DE /* DataManager */,
-				E21B4765267DF9D200CAB1DE /* Presenter */,
-				E21B476A267DF9D200CAB1DE /* Wireframe */,
-				E21B476D267DF9D200CAB1DE /* View */,
-				E21B4771267DF9D200CAB1DE /* Interactor */,
-			);
-			path = ImagePreEdit;
-			sourceTree = "<group>";
-		};
-		E21B4762267DF9D200CAB1DE /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				E244EE9426838F5900808CD4 /* SZMergeResult.h */,
-				E244EE9526838F5900808CD4 /* SZMergeResult.m */,
-				E21B4763267DF9D200CAB1DE /* MTImagePreEditDataManager.h */,
-				E21B4764267DF9D200CAB1DE /* MTImagePreEditDataManager.m */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		E21B4765267DF9D200CAB1DE /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				E21B4766267DF9D200CAB1DE /* MTImagePreEditPresenter.h */,
-				E21B4767267DF9D200CAB1DE /* MTImagePreEditPresenter.m */,
-				E21B4768267DF9D200CAB1DE /* ModuleInterface */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		E21B4768267DF9D200CAB1DE /* ModuleInterface */ = {
-			isa = PBXGroup;
-			children = (
-				E21B4769267DF9D200CAB1DE /* MTImagePreEditModuleInterface.h */,
-			);
-			path = ModuleInterface;
-			sourceTree = "<group>";
-		};
-		E21B476A267DF9D200CAB1DE /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				E21B476B267DF9D200CAB1DE /* MTImagePreEditWireframe.h */,
-				E21B476C267DF9D200CAB1DE /* MTImagePreEditWireframe.m */,
-			);
-			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		E21B476D267DF9D200CAB1DE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E21B476F267DF9D200CAB1DE /* MTImagePreEditViewInterface.h */,
-				E21B4770267DF9D200CAB1DE /* MTImagePreEditViewController.h */,
-				E21B476E267DF9D200CAB1DE /* MTImagePreEditViewController.m */,
-				E244EE7F26834B4100808CD4 /* MTImagesPreEditView.h */,
-				E244EE8026834B4100808CD4 /* MTImagesPreEditView.m */,
-				E244EEA42685A20A00808CD4 /* PreEditViews */,
-				E244EE97268391B700808CD4 /* MTImagesPreViewView.h */,
-				E244EE98268391B700808CD4 /* MTImagesPreViewView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E21B4771267DF9D200CAB1DE /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				E21B4773267DF9D200CAB1DE /* MTImagePreEditInteractor.h */,
-				E21B4772267DF9D200CAB1DE /* MTImagePreEditInteractor.m */,
-				E244EE7E26834A3200808CD4 /* MTImagePreEditInteractorProtocol.h */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		E21B4789267DFB7200CAB1DE /* Home */ = {
@@ -629,32 +475,6 @@
 			path = SortedTableNode;
 			sourceTree = "<group>";
 		};
-		E244EE8226834E5B00808CD4 /* ImageHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				E244EE8F26837B0C00808CD4 /* Agorithm */,
-				E244EE7526831BA700808CD4 /* MTImageStitcher.h */,
-				E244EE7626831BA700808CD4 /* MTImageStitcher.m */,
-				E244EE9326838F0000808CD4 /* MTImageStitchDelegate.h */,
-			);
-			path = ImageHelpers;
-			sourceTree = "<group>";
-		};
-		E244EE8F26837B0C00808CD4 /* Agorithm */ = {
-			isa = PBXGroup;
-			children = (
-				E244EE8C26837B0100808CD4 /* SZConstraint.h */,
-				E244EE8D26837B0100808CD4 /* SZConstraint.m */,
-				E244EE8626837AE300808CD4 /* SZImageMergeInfo.h */,
-				E244EE8726837AE300808CD4 /* SZImageMergeInfo.m */,
-				E244EE8926837AF400808CD4 /* SZImageFinger.h */,
-				E244EE8A26837AF400808CD4 /* SZImageFinger.m */,
-				E244EE8326837AD600808CD4 /* SZImageGenerator.h */,
-				E244EE8426837AD600808CD4 /* SZImageGenerator.m */,
-			);
-			path = Agorithm;
-			sourceTree = "<group>";
-		};
 		E244EE9A2683991300808CD4 /* EmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,19 +485,6 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
-		E244EEA42685A20A00808CD4 /* PreEditViews */ = {
-			isa = PBXGroup;
-			children = (
-				E244EEAA2685A22700808CD4 /* SZEditorView.h */,
-				E244EEA72685A22700808CD4 /* SZEditorView.m */,
-				E244EEA82685A22700808CD4 /* SZScrollView.h */,
-				E244EEA92685A22700808CD4 /* SZScrollView.m */,
-				E244EEA62685A22700808CD4 /* SZStichingImageView.h */,
-				E244EEA52685A22700808CD4 /* SZStichingImageView.m */,
-			);
-			path = PreEditViews;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -685,7 +492,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Memou" */;
 			buildPhases = (
-				67D201C992C77B664E85BBAA /* [CP] Check Pods Manifest.lock */,
+				B86ED8181F41BAACCA20A49F /* [CP] Check Pods Manifest.lock */,
 				ABFE85511BCB3D8A004D0B84 /* Increase BuildNumber */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
@@ -783,7 +590,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67D201C992C77B664E85BBAA /* [CP] Check Pods Manifest.lock */ = {
+		ABFE85511BCB3D8A004D0B84 /* Increase BuildNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increase BuildNumber";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${Memou_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${Memou_DIR}/${INFOPLIST_FILE}\"\necho \"build number increase\"\nfi\n";
+		};
+		B86ED8181F41BAACCA20A49F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -805,20 +626,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABFE85511BCB3D8A004D0B84 /* Increase BuildNumber */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Increase BuildNumber";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${Memou_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${Memou_DIR}/${INFOPLIST_FILE}\"\necho \"build number increase\"\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -828,51 +635,30 @@
 			files = (
 				E21B4778267DF9D200CAB1DE /* MemouDateUtility.m in Sources */,
 				E21B47A6267E052800CAB1DE /* MTImageListView.m in Sources */,
-				E244EE9626838F5900808CD4 /* SZMergeResult.m in Sources */,
-				E21B477F267DF9D200CAB1DE /* MTImagePreEditInteractor.m in Sources */,
-				E244EE8E26837B0100808CD4 /* SZConstraint.m in Sources */,
 				E21B479C267DFB7200CAB1DE /* MTHomeDataManager.m in Sources */,
-				E21B477E267DF9D200CAB1DE /* MTImagePreEditViewController.m in Sources */,
 				E21B479E267DFB7200CAB1DE /* MTHomeWireframe.m in Sources */,
-				E244EEAB2685A22700808CD4 /* SZStichingImageView.m in Sources */,
-				E244EEAD2685A22700808CD4 /* SZScrollView.m in Sources */,
 				E21B47B0267E079F00CAB1DE /* MTImageCell.m in Sources */,
 				E21B47A3267DFF7F00CAB1DE /* MTRootWireframe.m in Sources */,
-				E244EE8526837AD600808CD4 /* SZImageGenerator.m in Sources */,
-				E244EE8826837AE300808CD4 /* SZImageMergeInfo.m in Sources */,
 				E21B4776267DF9D200CAB1DE /* MemouConstants.m in Sources */,
-				E244EE7726831BA700808CD4 /* MTImageStitcher.m in Sources */,
 				E21B47AC267E065600CAB1DE /* MySortedTableView.m in Sources */,
 				E21B479F267DFB7200CAB1DE /* MTHomeViewController.m in Sources */,
 				E21B47BB2680D21500CAB1DE /* MTGestureHandler.m in Sources */,
 				E21FE0B92682014A001F4DF9 /* UIViewController+MTNaviBarItem.m in Sources */,
-				E21B477C267DF9D200CAB1DE /* MTImagePreEditPresenter.m in Sources */,
 				E244EE9D2683992500808CD4 /* MTEmptyView.m in Sources */,
-				E244EE8B26837AF400808CD4 /* SZImageFinger.m in Sources */,
-				E244EEAC2685A22700808CD4 /* SZEditorView.m in Sources */,
 				E21B4775267DF9D200CAB1DE /* MemouConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E21B47A9267E061100CAB1DE /* BaseSortedTableView.m in Sources */,
 				E21B47A0267DFB7200CAB1DE /* MTHomeInteractor.m in Sources */,
 				E21B479D267DFB7200CAB1DE /* MTHomePresenter.m in Sources */,
 				E21B4779267DF9D200CAB1DE /* MemouStringUtility.m in Sources */,
-				E21B477D267DF9D200CAB1DE /* MTImagePreEditWireframe.m in Sources */,
-				E21B47B4267E385100CAB1DE /* UIImage+Clip.m in Sources */,
 				E21B477A267DF9D200CAB1DE /* MemouFontUtility.m in Sources */,
-				E244EE7A26831CB300808CD4 /* UIImage+Logo.m in Sources */,
-				E244EE99268391B700808CD4 /* MTImagesPreViewView.m in Sources */,
 				C8871940267F31EE00E9D03C /* MTImageNodeListView.m in Sources */,
 				C887197A267F55A800E9D03C /* MTImageCellNode.m in Sources */,
 				E21B4777267DF9D200CAB1DE /* MemouDeviceUtility.m in Sources */,
 				E21B47B82680D06C00CAB1DE /* MTSortedTableNode.m in Sources */,
-				E21B4787267DFB0E00CAB1DE /* MemouAppDelegate.mm in Sources */,
-				E21B477B267DF9D200CAB1DE /* MTImagePreEditDataManager.m in Sources */,
-				E244EE8126834B4100808CD4 /* MTImagesPreEditView.m in Sources */,
-				E21B4774267DF9D200CAB1DE /* UIColor+MTExtension.m in Sources */,
+				E21B4787267DFB0E00CAB1DE /* MemouAppDelegate.m in Sources */,
 				E21B4786267DFB0E00CAB1DE /* MemouAppDependencies.m in Sources */,
-				E244EE7D26831F1C00808CD4 /* UIImage+Rotate.m in Sources */,
 				C8871900267F20DA00E9D03C /* MTImageCellModel.m in Sources */,
-				E244EE9226837B2800808CD4 /* UIImage+Stiching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,7 +775,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A94814A1960E47C2474CDF4 /* Pods-Memou.debug.xcconfig */;
+			baseConfigurationReference = 083B0766F67CC0CE9BFB5BEA /* Pods-Memou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1015,7 +801,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63495C3B6961612BB687573D /* Pods-Memou.release.xcconfig */;
+			baseConfigurationReference = 17784AAECF26FD27A10122BA /* Pods-Memou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
