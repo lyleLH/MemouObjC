@@ -1,0 +1,6 @@
+framework module MTLayoutUtilityComponent {
+  umbrella header "MTLayoutUtilityComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

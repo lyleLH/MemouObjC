@@ -1,0 +1,6 @@
+framework module Pods_ImagePreEdit_Tests {
+  umbrella header "Pods-ImagePreEdit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

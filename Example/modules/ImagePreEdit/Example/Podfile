@@ -1,0 +1,17 @@
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+source 'https://github.com/lyleLH/MTSpecs.git'
+
+use_frameworks!
+
+use_modular_headers!
+platform :ios, '10.0'
+pod 'YYKit'
+target 'ImagePreEdit_Example' do
+  pod 'ImagePreEdit', :path => '../'
+
+  target 'ImagePreEdit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

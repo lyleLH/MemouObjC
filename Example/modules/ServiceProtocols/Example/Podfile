@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ServiceProtocols_Tests' do
+  pod 'ServiceProtocols', :path => '../'
+  
+  
+end

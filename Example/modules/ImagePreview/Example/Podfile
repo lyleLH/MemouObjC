@@ -1,0 +1,12 @@
+
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+source 'https://github.com/lyleLH/MTSpecs.git'
+
+platform :ios, '10.0'
+use_frameworks!
+pod 'MTBaseKit'
+target 'ImagePreview_Tests' do
+  pod 'ImagePreview', :path => '../'
+  
+  
+end

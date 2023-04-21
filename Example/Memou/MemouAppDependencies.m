@@ -67,25 +67,7 @@
     MTHomeDataManager * dataManager = [[MTHomeDataManager alloc] init];
     interactor.dataManager = dataManager;
     interactor.presenter = presenter;
-    
-//    // Edit module initialization
-//    MTImagePreEditWireframe *editWireframe = [[MTImagePreEditWireframe alloc] init];
-//    self.homeWireframe.editWireframe = editWireframe;
-//
-//    MTImagePreEditPresenter *editPresenter = [[MTImagePreEditPresenter alloc] init];
-//    editWireframe.presenter   =editPresenter;
-//
-//    presenter.editModuleDelegate = editPresenter;
-//
-//
-//
-//    MTImagePreEditInteractor *editInteractor = [[MTImagePreEditInteractor alloc] init];
-//    editPresenter.interactor = editInteractor;
-//    editInteractor.presenter = editPresenter;
-//
-//    MTImagePreEditDataManager *editDataManager = [[MTImagePreEditDataManager alloc] init];
-//    editInteractor.dataManager  =editDataManager;
-//    
+
 }
 
 

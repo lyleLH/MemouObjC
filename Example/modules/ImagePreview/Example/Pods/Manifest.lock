@@ -1,0 +1,28 @@
+PODS:
+  - ImagePreview (0.1.0)
+  - MTBaseKit (0.3.0):
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - ImagePreview (from `../`)
+  - MTBaseKit
+
+SPEC REPOS:
+  https://github.com/lyleLH/MTSpecs.git:
+    - MTBaseKit
+  trunk:
+    - YYModel
+
+EXTERNAL SOURCES:
+  ImagePreview:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ImagePreview: 019382bb56dcc21758e0280c57040955058aff67
+  MTBaseKit: cb00d96c7fcfa6c4b098ce82065a660373360f37
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 46a1c6a9380a5eafbe38f6d73b60ca53522a2d25
+
+COCOAPODS: 1.11.3

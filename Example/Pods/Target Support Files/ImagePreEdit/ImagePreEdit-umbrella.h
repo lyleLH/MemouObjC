@@ -26,6 +26,7 @@
 #import "MTImagePreEditInteractorProtocol.h"
 #import "MTImagePreEditModuleInterface.h"
 #import "MTImagePreEditPresenter.h"
+#import "ViewModelLifecycleProtocol.h"
 #import "MTImagePreEditViewController.h"
 #import "MTImagePreEditViewInterface.h"
 #import "MTImagesPreEditView.h"
